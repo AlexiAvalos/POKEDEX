@@ -1,0 +1,6 @@
+C:\Users\hp\source\repos\Pokedex\Controladores\bin\Debug\Controladores.dll
+C:\Users\hp\source\repos\Pokedex\Controladores\bin\Debug\Controladores.pdb
+C:\Users\hp\source\repos\Pokedex\Controladores\obj\Debug\Controladores.csproj.AssemblyReference.cache
+C:\Users\hp\source\repos\Pokedex\Controladores\obj\Debug\Controladores.csproj.CoreCompileInputs.cache
+C:\Users\hp\source\repos\Pokedex\Controladores\obj\Debug\Controladores.dll
+C:\Users\hp\source\repos\Pokedex\Controladores\obj\Debug\Controladores.pdb
