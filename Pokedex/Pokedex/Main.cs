@@ -1,27 +1,31 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.Drawing.Drawing2D;
 using System.Windows.Forms;
 
 namespace Pokedex
 {
     public partial class Main : Form
     {
-        Controladores.MainController oMainController = new Controladores.MainController();
-
         public Main()
         {
             InitializeComponent();
         }
 
-        private void Main_Load(object sender, EventArgs e)
+
+        private void pokemonLabel1_Click(object sender, EventArgs e)
         {
-            oMainController.GetList();
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pokemonPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }
