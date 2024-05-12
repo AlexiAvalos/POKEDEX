@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\Pokedex",
+    "\\Pokedex\\Pokedex"
   ],
+  "SelectedNode": "\\Pokedex\\Pokedex\\Main1.cs",
   "PreviewInSolutionExplorer": false
 }
