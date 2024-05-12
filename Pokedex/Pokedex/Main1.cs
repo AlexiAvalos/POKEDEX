@@ -16,12 +16,5 @@ namespace Pokedex
         {
             InitializeComponent();
         }
-
-
-        //no moverle que se rompe
-        private void rjButton8_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
