@@ -23,5 +23,38 @@ namespace Pokedex
         {
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+            VistaPokemon vistaPokemon = new VistaPokemon();
+            vistaPokemon.Show();
+            this.Hide();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+            VistaRegion vistaRegion = new VistaRegion();
+            vistaRegion.Show();
+            this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+            VistaObjetos vistaObjetos = new VistaObjetos();
+            vistaObjetos.Show();
+            this.Hide();
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+            VistaTipo vistaTipo = new VistaTipo();
+            vistaTipo.Show();
+            this.Hide();
+        }
     }
 }
