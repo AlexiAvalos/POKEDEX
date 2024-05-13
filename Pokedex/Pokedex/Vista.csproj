@@ -52,6 +52,7 @@
       <HintPath>..\packages\MetroModernUI.1.4.0.0\lib\net\MetroFramework.Fonts.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -64,6 +65,43 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PokemonPanelTipos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PokemonPanelObjetos.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="PokemonPanelRegion.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VistaObjeto - Copia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaObjeto - Copia.Designer.cs">
+      <DependentUpon>VistaObjeto - Copia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaTipos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaTipos.Designer.cs">
+      <DependentUpon>VistaTipos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VistaRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaRegion.Designer.cs">
+      <DependentUpon>VistaRegion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PokemonDAO.cs" />
+    <Compile Include="PokemonPanelNames.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="VistaPokemon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VistaPokemon.Designer.cs">
+      <DependentUpon>VistaPokemon.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,12 +120,6 @@
     </Compile>
     <Compile Include="RJButton.cs">
       <SubType>Component</SubType>
-    </Compile>
-    <Compile Include="VistaPokemon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="VistaPokemon.Designer.cs">
-      <DependentUpon>VistaPokemon.cs</DependentUpon>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -110,15 +142,24 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="VistaObjeto - Copia.resx">
+      <DependentUpon>VistaObjeto - Copia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaTipos.resx">
+      <DependentUpon>VistaTipos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaRegion.resx">
+      <DependentUpon>VistaRegion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VistaPokemon.resx">
+      <DependentUpon>VistaPokemon.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main1.resx">
       <DependentUpon>Main1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="VistaPokemon.resx">
-      <DependentUpon>VistaPokemon.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -135,6 +176,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\textboxpk%282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tipos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pokeball.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pokeballs2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Regiones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Menu Background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Objetos.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
