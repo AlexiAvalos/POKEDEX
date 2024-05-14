@@ -1,5 +1,4 @@
-﻿using System;
-using System.Drawing;
+﻿using System.Drawing;
 using System.Windows.Forms;
 
 namespace Pokedex
@@ -17,7 +16,7 @@ namespace Pokedex
                 Invalidate(); // Invalidar el control para redibujar
             }
         }
-        
+
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);

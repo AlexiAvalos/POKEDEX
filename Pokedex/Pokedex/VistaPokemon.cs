@@ -15,7 +15,7 @@ namespace Pokedex
             pokemonDAO = new PokemonDAO(connectionString);
             MostrarPokemones();
         }
-      
+
         private void MostrarPokemones()
         {
             List<string> nombresPokemon = pokemonDAO.ObtenerNombresPokemon();

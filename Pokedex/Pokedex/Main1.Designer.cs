@@ -29,10 +29,19 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-<<<<<<< HEAD
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pokemonPanel4 = new Pokedex.PokemonPanel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pokemonPanel3 = new Pokedex.PokemonPanel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.pokemonPanel2 = new Pokedex.PokemonPanel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.pokemonPanel1 = new Pokedex.PokemonPanel();
+            this.label1 = new System.Windows.Forms.Label();
             this.n10_btn = new Pokedex.RJButton();
             this.n9_btn = new Pokedex.RJButton();
             this.n8_btn = new Pokedex.RJButton();
@@ -52,26 +61,37 @@
             this.down_btn = new Pokedex.RJButton();
             this.left_btn = new Pokedex.RJButton();
             this.up_btn = new Pokedex.RJButton();
-            this.pokemonPanel3 = new Pokedex.PokemonPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pokemonPanel2 = new Pokedex.PokemonPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pokemonPanel1 = new Pokedex.PokemonPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pokemonPanel4 = new Pokedex.PokemonPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-=======
->>>>>>> 2441536261f33169aaf0b473e683c6e3efe90d8e
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.pokemonPanel4.SuspendLayout();
             this.pokemonPanel3.SuspendLayout();
             this.pokemonPanel2.SuspendLayout();
             this.pokemonPanel1.SuspendLayout();
-            this.pokemonPanel4.SuspendLayout();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox4.BackgroundImage = global::Pokedex.Properties.Resources.Pokeballs2;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox4.Location = new System.Drawing.Point(490, 172);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(136, 91);
+            this.pictureBox4.TabIndex = 31;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(396, 125);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(310, 185);
+            this.pictureBox3.TabIndex = 30;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
@@ -79,98 +99,52 @@
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(801, 451);
+            this.pictureBox1.Size = new System.Drawing.Size(756, 495);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-<<<<<<< HEAD
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
-=======
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackgroundImage = global::Pokedex.Properties.Resources.pokeball_icon_sign_seamless_pattern_with_geometric_vector_11293855;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(100, 95);
+            this.pictureBox2.Location = new System.Drawing.Point(50, 107);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(274, 230);
-            this.pictureBox2.TabIndex = 1;
+            this.pictureBox2.Size = new System.Drawing.Size(298, 250);
+            this.pictureBox2.TabIndex = 32;
             this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackgroundImage = global::Pokedex.Properties.Resources.R;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Location = new System.Drawing.Point(64, 135);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(273, 86);
+            this.pictureBox5.TabIndex = 33;
+            this.pictureBox5.TabStop = false;
             // 
             // pokemonPanel4
             // 
+            this.pokemonPanel4.AllowDrop = true;
             this.pokemonPanel4.BackColor = System.Drawing.Color.Transparent;
             this.pokemonPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel4.BackgroundImage")));
             this.pokemonPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pokemonPanel4.Controls.Add(this.label4);
-            this.pokemonPanel4.Location = new System.Drawing.Point(115, 218);
+            this.pokemonPanel4.Location = new System.Drawing.Point(225, 297);
             this.pokemonPanel4.Name = "pokemonPanel4";
-            this.pokemonPanel4.Size = new System.Drawing.Size(112, 41);
-            this.pokemonPanel4.TabIndex = 6;
+            this.pokemonPanel4.Size = new System.Drawing.Size(100, 35);
+            this.pokemonPanel4.TabIndex = 35;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 13);
+            this.label4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.label4.Location = new System.Drawing.Point(20, 3);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Pokémones";
-            // 
-            // pokemonPanel1
-            // 
-            this.pokemonPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.pokemonPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel1.BackgroundImage")));
-            this.pokemonPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pokemonPanel1.Controls.Add(this.label1);
-            this.pokemonPanel1.Location = new System.Drawing.Point(251, 218);
-            this.pokemonPanel1.Name = "pokemonPanel1";
-            this.pokemonPanel1.Size = new System.Drawing.Size(112, 41);
-            this.pokemonPanel1.TabIndex = 7;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(89, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Generaciones";
->>>>>>> 2441536261f33169aaf0b473e683c6e3efe90d8e
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(425, 116);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(271, 169);
-            this.pictureBox3.TabIndex = 8;
-            this.pictureBox3.TabStop = false;
-            // 
-<<<<<<< HEAD
-=======
-            // pokemonPanel2
-            // 
-            this.pokemonPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.pokemonPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel2.BackgroundImage")));
-            this.pokemonPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pokemonPanel2.Controls.Add(this.label2);
-            this.pokemonPanel2.Location = new System.Drawing.Point(115, 265);
-            this.pokemonPanel2.Name = "pokemonPanel2";
-            this.pokemonPanel2.Size = new System.Drawing.Size(112, 41);
-            this.pokemonPanel2.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Objetos";
+            this.label4.Size = new System.Drawing.Size(39, 15);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Tipos";
+            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pokemonPanel3
             // 
@@ -178,38 +152,66 @@
             this.pokemonPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel3.BackgroundImage")));
             this.pokemonPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pokemonPanel3.Controls.Add(this.label3);
-            this.pokemonPanel3.Location = new System.Drawing.Point(251, 265);
+            this.pokemonPanel3.Location = new System.Drawing.Point(64, 300);
             this.pokemonPanel3.Name = "pokemonPanel3";
-            this.pokemonPanel3.Size = new System.Drawing.Size(112, 41);
-            this.pokemonPanel3.TabIndex = 7;
+            this.pokemonPanel3.Size = new System.Drawing.Size(100, 32);
+            this.pokemonPanel3.TabIndex = 35;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 13);
+            this.label3.Location = new System.Drawing.Point(14, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(58, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Creditos";
+            this.label3.Size = new System.Drawing.Size(55, 15);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Objetos";
+            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
->>>>>>> 2441536261f33169aaf0b473e683c6e3efe90d8e
-            // pictureBox4
+            // pokemonPanel2
             // 
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.BackgroundImage = global::Pokedex.Properties.Resources.R;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-<<<<<<< HEAD
-            this.pictureBox4.Location = new System.Drawing.Point(3, 3);
-=======
-            this.pictureBox4.Location = new System.Drawing.Point(141, 125);
->>>>>>> 2441536261f33169aaf0b473e683c6e3efe90d8e
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(295, 114);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
+            this.pokemonPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.pokemonPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel2.BackgroundImage")));
+            this.pokemonPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pokemonPanel2.Controls.Add(this.label2);
+            this.pokemonPanel2.Location = new System.Drawing.Point(225, 237);
+            this.pokemonPanel2.Name = "pokemonPanel2";
+            this.pokemonPanel2.Size = new System.Drawing.Size(100, 37);
+            this.pokemonPanel2.TabIndex = 35;
             // 
-<<<<<<< HEAD
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(17, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(63, 15);
+            this.label2.TabIndex = 1;
+            this.label2.Text = "Regiones";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
+            // 
+            // pokemonPanel1
+            // 
+            this.pokemonPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.pokemonPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel1.BackgroundImage")));
+            this.pokemonPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pokemonPanel1.Controls.Add(this.label1);
+            this.pokemonPanel1.Location = new System.Drawing.Point(64, 237);
+            this.pokemonPanel1.Name = "pokemonPanel1";
+            this.pokemonPanel1.Size = new System.Drawing.Size(100, 37);
+            this.pokemonPanel1.TabIndex = 34;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(14, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 15);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Pokemones";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
             // n10_btn
             // 
             this.n10_btn.BackColor = System.Drawing.Color.LightSeaGreen;
@@ -551,116 +553,19 @@
             this.up_btn.TextColor = System.Drawing.Color.White;
             this.up_btn.UseVisualStyleBackColor = false;
             // 
-            // pokemonPanel3
-            // 
-            this.pokemonPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.pokemonPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel3.BackgroundImage")));
-            this.pokemonPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pokemonPanel3.Controls.Add(this.label3);
-            this.pokemonPanel3.Location = new System.Drawing.Point(213, 286);
-            this.pokemonPanel3.Name = "pokemonPanel3";
-            this.pokemonPanel3.Size = new System.Drawing.Size(112, 41);
-            this.pokemonPanel3.TabIndex = 7;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(3, 13);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(39, 15);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Tipos";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
-            // 
-            // pokemonPanel2
-            // 
-            this.pokemonPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.pokemonPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel2.BackgroundImage")));
-            this.pokemonPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pokemonPanel2.Controls.Add(this.label2);
-            this.pokemonPanel2.Location = new System.Drawing.Point(77, 286);
-            this.pokemonPanel2.Name = "pokemonPanel2";
-            this.pokemonPanel2.Size = new System.Drawing.Size(112, 41);
-            this.pokemonPanel2.TabIndex = 7;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(3, 13);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(55, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Objetos";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
-            // 
-            // pokemonPanel1
-            // 
-            this.pokemonPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.pokemonPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel1.BackgroundImage")));
-            this.pokemonPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pokemonPanel1.Controls.Add(this.label1);
-            this.pokemonPanel1.Location = new System.Drawing.Point(213, 239);
-            this.pokemonPanel1.Name = "pokemonPanel1";
-            this.pokemonPanel1.Size = new System.Drawing.Size(112, 41);
-            this.pokemonPanel1.TabIndex = 7;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(3, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(63, 15);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Regiones";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // pokemonPanel4
-            // 
-            this.pokemonPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.pokemonPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel4.BackgroundImage")));
-            this.pokemonPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pokemonPanel4.Controls.Add(this.label4);
-            this.pokemonPanel4.Location = new System.Drawing.Point(77, 239);
-            this.pokemonPanel4.Name = "pokemonPanel4";
-            this.pokemonPanel4.Size = new System.Drawing.Size(112, 41);
-            this.pokemonPanel4.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(3, 13);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 15);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Pokémones";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.flowLayoutPanel1.Controls.Add(this.pictureBox4);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(50, 103);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(298, 253);
-            this.flowLayoutPanel1.TabIndex = 29;
-            // 
-=======
->>>>>>> 2441536261f33169aaf0b473e683c6e3efe90d8e
             // Main1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
             this.ClientSize = new System.Drawing.Size(755, 494);
             this.Controls.Add(this.pokemonPanel4);
-            this.Controls.Add(this.pokemonPanel2);
             this.Controls.Add(this.pokemonPanel3);
+            this.Controls.Add(this.pokemonPanel2);
             this.Controls.Add(this.pokemonPanel1);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox4);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.n10_btn);
             this.Controls.Add(this.n9_btn);
             this.Controls.Add(this.n8_btn);
@@ -680,28 +585,22 @@
             this.Controls.Add(this.down_btn);
             this.Controls.Add(this.left_btn);
             this.Controls.Add(this.up_btn);
-=======
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pokemonPanel3);
-            this.Controls.Add(this.pokemonPanel2);
->>>>>>> 2441536261f33169aaf0b473e683c6e3efe90d8e
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
             this.Name = "Main1";
             this.Text = "Main1";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            this.pokemonPanel4.ResumeLayout(false);
+            this.pokemonPanel4.PerformLayout();
             this.pokemonPanel3.ResumeLayout(false);
             this.pokemonPanel3.PerformLayout();
             this.pokemonPanel2.ResumeLayout(false);
             this.pokemonPanel2.PerformLayout();
             this.pokemonPanel1.ResumeLayout(false);
             this.pokemonPanel1.PerformLayout();
-            this.pokemonPanel4.ResumeLayout(false);
-            this.pokemonPanel4.PerformLayout();
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -709,17 +608,6 @@
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private PokemonPanel pokemonPanel4;
-        private System.Windows.Forms.Label label4;
-        private PokemonPanel pokemonPanel1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private PokemonPanel pokemonPanel2;
-        private System.Windows.Forms.Label label2;
-        private PokemonPanel pokemonPanel3;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-<<<<<<< HEAD
         private RJButton up_btn;
         private RJButton left_btn;
         private RJButton down_btn;
@@ -739,8 +627,17 @@
         private RJButton n8_btn;
         private RJButton n7_btn;
         private RJButton n6_btn;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-=======
->>>>>>> 2441536261f33169aaf0b473e683c6e3efe90d8e
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox5;
+        private PokemonPanel pokemonPanel1;
+        private System.Windows.Forms.Label label1;
+        private PokemonPanel pokemonPanel2;
+        private System.Windows.Forms.Label label2;
+        private PokemonPanel pokemonPanel3;
+        private System.Windows.Forms.Label label3;
+        private PokemonPanel pokemonPanel4;
+        private System.Windows.Forms.Label label4;
     }
 }
