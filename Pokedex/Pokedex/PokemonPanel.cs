@@ -1,14 +1,14 @@
 ﻿using System.Drawing;
 using System.Windows.Forms;
 
-namespace Pokedex// Aquí reemplaza 'NombreDelProyecto' con el nombre real de tu proyecto
+namespace Pokedex
 {
     public class PokemonPanel : Panel
     {
         public PokemonPanel()
         {
-            // Establecer el tamaño del panel
-            this.Size = new Size(300, 200);
+            // Establecer el tamaño del panel para que coincida con el tamaño de la imagen
+            this.Size = Properties.Resources.panel.Size;
 
             // Establecer el fondo del panel como la imagen del borde Pokémon
             this.BackgroundImage = Properties.Resources.panel; // Asegúrate de que 'panel' sea el nombre correcto de tu imagen en los recursos
@@ -16,11 +16,8 @@ namespace Pokedex// Aquí reemplaza 'NombreDelProyecto' con el nombre real de tu
             // Ajustar la imagen al tamaño del panel
             this.BackgroundImageLayout = ImageLayout.Stretch;
 
-            // Establecer la ubicación relativa al formulario
-            this.Location = new Point(50, 50);
-
-            // Hacer el fondo del panel transparente
-            this.BackColor = Color.Transparent;
+            // Establecer la fuente del panel
+            this.Font = new Font("Segoe UI Emoji", 10, FontStyle.Regular);
         }
     }
 }
