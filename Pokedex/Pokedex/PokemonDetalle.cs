@@ -1,75 +1,58 @@
 ﻿using System;
 using System.Windows.Forms;
 
-
 namespace Pokedex
 {
     public partial class PokemonDetalle : Form
     {
-        private PokemonClass PokemonDAO;
+        private Pokemon pokemon;
 
-       private string nombrePokemon; // Atributo para almacenar el nombre del Pokémon
-
-    public PokemonDetalle(string nombrePokemon)
-    {
-        InitializeComponent();
-        this.nombrePokemon = nombrePokemon; // Almacena el nombre del Pokémon en el atributo de la clase
-        MostrarDescripcion(); // Muestra la descripción por defecto al abrir la vista
-    }
-        public void MostrarPokemonDetalle(string nombrePokemon)
+        public PokemonDetalle(Pokemon pokemon)
         {
-            // Lógica para mostrar los detalles del Pokémon seleccionado
-            MessageBox.Show($"Mostrando detalles de {nombrePokemon}");
+            InitializeComponent();
+            this.pokemon = pokemon;
+            MostrarDescripcion(); // Muestra la descripción por defecto al abrir la vista
         }
-
 
         private void MostrarDescripcion()
         {
             OcultarTodosLosPaneles();
-            panelDescripcion.Visible = true;
-            lblDescripcion.Text = PokemonDAO.Descripcion;
+            panelDescripcion2.Visible = true;
+            lblDescripcion.Text = pokemon.Descripcion;
         }
 
         private void MostrarAtributos()
         {
             OcultarTodosLosPaneles();
             panelAtributos.Visible = true;
-            lblSalud.Text = $"Salud: {PokemonDAO.Salud}";
-            lblAltura.Text = $"Altura: {PokemonDAO.Altura}";
-            lblAtaque.Text = $"Ataque: {PokemonDAO.Ataque}";
-            lblDefensa.Text = $"Defensa: {PokemonDAO.Defensa}";
+            lblSalud.Text = $"Salud: {pokemon.Salud}";
+            lblAltura.Text = $"Altura: {pokemon.Altura}";
+            lblAtaque.Text = $"Ataque: {pokemon.Ataque}";
+            lblDefensa.Text = $"Defensa: {pokemon.Defensa}";
         }
 
         private void MostrarTipoYCategoria()
         {
             OcultarTodosLosPaneles();
             panelTipoCategoria.Visible = true;
-            lblTipo.Text = $"Tipo: {PokemonDAO.Tipo}";
-            lblCategoria.Text = $"Categoría: {PokemonDAO.NombreCategoria}";
-
+            lblTipo.Text = $"Tipo: {pokemon.Tipo}";
         }
 
         private void MostrarGeneracion()
         {
             OcultarTodosLosPaneles();
             panelGeneracion.Visible = true;
-            lblGeneracion.Text = $"Generación: {PokemonDAO.Generacion}";
-            lblHabitat.Text = $"Generación: {PokemonDAO.Habitat}";
+            lblGeneracion.Text = $"Generación: {pokemon.Generacion}";
+            lblHabitat.Text = $"Habitat: {pokemon.Habitat}";
         }
-
-        
 
         private void OcultarTodosLosPaneles()
         {
-            panelDescripcion.Visible = false;
+            panelDescripcion2.Visible = false;
             panelAtributos.Visible = false;
             panelTipoCategoria.Visible = false;
             panelGeneracion.Visible = false;
         }
-
-       
-
-      
 
         private void n1_btn_Click(object sender, EventArgs e)
         {

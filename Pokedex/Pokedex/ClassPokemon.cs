@@ -1,4 +1,4 @@
-﻿public class PokemonClass
+﻿public class Pokemon
 {
     public int IdPokemon { get; set; }
     public int IdCategoria { get; set; }
@@ -18,6 +18,8 @@
     public string Tipo { get; set; }
     public int Generacion { get; set; }
     public string Habitat { get; set; }
+    public string Categoria { get; set; } // Agrega la propiedad Categoria
 
-    public string NombreCategoria { get; set; }// Agregar la propiedad Generacion
+    public string NombreCategoria { get; set; }
 }
+

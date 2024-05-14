@@ -153,12 +153,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PokemonDetalle.resx">
       <DependentUpon>PokemonDetalle.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="VistaObjeto - Copia.resx">
       <DependentUpon>VistaObjeto - Copia.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="VistaTipos.resx">
       <DependentUpon>VistaTipos.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="VistaRegion.resx">
       <DependentUpon>VistaRegion.cs</DependentUpon>
@@ -169,6 +172,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

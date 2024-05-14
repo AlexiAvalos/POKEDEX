@@ -19,7 +19,6 @@ C:\Users\hp\POKEDEX\Pokedex\Pokedex\bin\Debug\AForge.Math.dll
 C:\Users\hp\POKEDEX\Pokedex\Pokedex\bin\Debug\AForge.xml
 C:\Users\hp\POKEDEX\Pokedex\Pokedex\bin\Debug\AForge.Imaging.xml
 C:\Users\hp\POKEDEX\Pokedex\Pokedex\bin\Debug\AForge.Math.xml
-<<<<<<< HEAD
 C:\Users\ivani\POKEDEX\Pokedex\Pokedex\obj\Debug\Vista.csproj.AssemblyReference.cache
 C:\Users\ivani\POKEDEX\Pokedex\Pokedex\obj\Debug\Pokedex.Main1.resources
 C:\Users\ivani\POKEDEX\Pokedex\Pokedex\obj\Debug\Pokedex.Properties.Resources.resources
