@@ -15,6 +15,12 @@ namespace Pokedex
             pokemonDAO = new PokemonDAO(connectionString);
             MostrarPokemones();
         }
+        private void MostrarDetallesPokemon(string nombrePokemon)
+        {
+            // Aquí debes abrir el formulario PokemonDetalle y pasarle el nombre del Pokémon seleccionado
+            PokemonDetalle pokemonDetalleForm = new PokemonDetalle(nombrePokemon);
+            pokemonDetalleForm.Show();
+        }
 
         private void MostrarPokemones()
         {
@@ -26,14 +32,27 @@ namespace Pokedex
                 pokemonPanel.NombrePokemon = nombrePokemon;
                 pokemonPanel.Margin = new Padding(10);
                 flowLayoutPanel1.Controls.Add(pokemonPanel);
+
+                // Suscribirse al evento de clic de cada panel
+                pokemonPanel.Click += (sender, e) =>
+                {
+                    MostrarDetallesPokemon(nombrePokemon);
+                };
             }
         }
 
-        private void MostrarDetallesPokemon(string nombrePokemon)
+
+        private void PokemonPanelNames_PokemonSeleccionado(object sender, EventArgs e)
         {
-            // Lógica para mostrar los detalles del Pokémon seleccionado
-            MessageBox.Show($"Mostrando detalles de {nombrePokemon}");
+            // Obtener el nombre del Pokémon seleccionado
+            PokemonPanelNames panel = (PokemonPanelNames)sender;
+            string nombrePokemon = panel.NombrePokemon;
+
+            // Mostrar los detalles del Pokémon seleccionado
+            MostrarDetallesPokemon(nombrePokemon);
         }
+
+       
 
         //no moverle que se rompe
         private void rjButton8_Click(object sender, EventArgs e)
