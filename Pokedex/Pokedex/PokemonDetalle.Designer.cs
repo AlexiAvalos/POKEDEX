@@ -28,6 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.panelTipoCategoria = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.lblTipo = new System.Windows.Forms.Label();
+            this.panelDescripcion2 = new System.Windows.Forms.Panel();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.n10_btn = new Pokedex.RJButton();
             this.n9_btn = new Pokedex.RJButton();
             this.n8_btn = new Pokedex.RJButton();
@@ -47,38 +55,105 @@
             this.down_btn = new Pokedex.RJButton();
             this.left_btn = new Pokedex.RJButton();
             this.up_btn = new Pokedex.RJButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panelDescripcion = new System.Windows.Forms.Panel();
             this.panelGeneracion = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.lblHabitat = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.lblGeneracion = new System.Windows.Forms.Label();
-            this.panelTipoCategoria = new System.Windows.Forms.Panel();
-            this.lblCategoria = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.lblTipo = new System.Windows.Forms.Label();
-            this.panelAtributos = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.lblDescripcion = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.lblDefensa = new System.Windows.Forms.Label();
-            this.lblAtaque = new System.Windows.Forms.Label();
-            this.lblAltura = new System.Windows.Forms.Label();
-            this.lblSalud = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblHabitat = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.lblSalud = new System.Windows.Forms.Label();
+            this.lblAltura = new System.Windows.Forms.Label();
+            this.lblAtaque = new System.Windows.Forms.Label();
+            this.lblDefensa = new System.Windows.Forms.Label();
+            this.panelAtributos = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panelDescripcion.SuspendLayout();
-            this.panelGeneracion.SuspendLayout();
             this.panelTipoCategoria.SuspendLayout();
+            this.panelDescripcion2.SuspendLayout();
+            this.panelGeneracion.SuspendLayout();
             this.panelAtributos.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.AutoScrollMargin = new System.Drawing.Size(0, 250);
+            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.flowLayoutPanel1.BackgroundImage = global::Pokedex.Properties.Resources.Menu_Background;
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(50, 106);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(298, 251);
+            this.flowLayoutPanel1.TabIndex = 29;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::Pokedex.Properties.Resources.pkdxfinal;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(756, 495);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // panelTipoCategoria
+            // 
+            this.panelTipoCategoria.Controls.Add(this.panelAtributos);
+            this.panelTipoCategoria.Controls.Add(this.label5);
+            this.panelTipoCategoria.Controls.Add(this.lblTipo);
+            this.panelTipoCategoria.Location = new System.Drawing.Point(402, 125);
+            this.panelTipoCategoria.Name = "panelTipoCategoria";
+            this.panelTipoCategoria.Size = new System.Drawing.Size(304, 182);
+            this.panelTipoCategoria.TabIndex = 6;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(54, 59);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(43, 20);
+            this.label5.TabIndex = 6;
+            this.label5.Text = "Tipo";
+            // 
+            // lblTipo
+            // 
+            this.lblTipo.AutoSize = true;
+            this.lblTipo.Location = new System.Drawing.Point(63, 96);
+            this.lblTipo.Name = "lblTipo";
+            this.lblTipo.Size = new System.Drawing.Size(38, 13);
+            this.lblTipo.TabIndex = 0;
+            this.lblTipo.Text = "lblTipo";
+            // 
+            // panelDescripcion2
+            // 
+            this.panelDescripcion2.Controls.Add(this.lblDescripcion);
+            this.panelDescripcion2.Controls.Add(this.label10);
+            this.panelDescripcion2.Location = new System.Drawing.Point(4, 3);
+            this.panelDescripcion2.Name = "panelDescripcion2";
+            this.panelDescripcion2.Size = new System.Drawing.Size(304, 182);
+            this.panelDescripcion2.TabIndex = 16;
+            // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.AutoSize = true;
+            this.lblDescripcion.Location = new System.Drawing.Point(25, 54);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(41, 13);
+            this.lblDescripcion.TabIndex = 10;
+            this.lblDescripcion.Text = "label11";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(110, 18);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(98, 20);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Descripcion";
             // 
             // n10_btn
             // 
@@ -424,56 +499,16 @@
             this.up_btn.TextColor = System.Drawing.Color.White;
             this.up_btn.UseVisualStyleBackColor = false;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.AutoScrollMargin = new System.Drawing.Size(0, 250);
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.flowLayoutPanel1.BackgroundImage = global::Pokedex.Properties.Resources.Menu_Background;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(50, 106);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(298, 251);
-            this.flowLayoutPanel1.TabIndex = 29;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::Pokedex.Properties.Resources.pkdxfinal;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(756, 495);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // panelDescripcion
-            // 
-            this.panelDescripcion.Controls.Add(this.panelGeneracion);
-            this.panelDescripcion.Location = new System.Drawing.Point(399, 128);
-            this.panelDescripcion.Name = "panelDescripcion";
-            this.panelDescripcion.Size = new System.Drawing.Size(307, 182);
-            this.panelDescripcion.TabIndex = 30;
-            // 
             // panelGeneracion
             // 
-            this.panelGeneracion.Controls.Add(this.label4);
-            this.panelGeneracion.Controls.Add(this.label3);
             this.panelGeneracion.Controls.Add(this.lblHabitat);
             this.panelGeneracion.Controls.Add(this.lblGeneracion);
-            this.panelGeneracion.Location = new System.Drawing.Point(0, 0);
+            this.panelGeneracion.Controls.Add(this.label4);
+            this.panelGeneracion.Controls.Add(this.label3);
+            this.panelGeneracion.Location = new System.Drawing.Point(402, 125);
             this.panelGeneracion.Name = "panelGeneracion";
             this.panelGeneracion.Size = new System.Drawing.Size(307, 182);
-            this.panelGeneracion.TabIndex = 0;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(15, 59);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(94, 20);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Generacion";
+            this.panelGeneracion.TabIndex = 1;
             // 
             // label3
             // 
@@ -485,14 +520,15 @@
             this.label3.TabIndex = 4;
             this.label3.Text = "Habitat";
             // 
-            // lblHabitat
+            // label4
             // 
-            this.lblHabitat.AutoSize = true;
-            this.lblHabitat.Location = new System.Drawing.Point(227, 106);
-            this.lblHabitat.Name = "lblHabitat";
-            this.lblHabitat.Size = new System.Drawing.Size(35, 13);
-            this.lblHabitat.TabIndex = 2;
-            this.lblHabitat.Text = "label3";
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(15, 59);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(94, 20);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Generacion";
             // 
             // lblGeneracion
             // 
@@ -503,163 +539,14 @@
             this.lblGeneracion.TabIndex = 1;
             this.lblGeneracion.Text = "lblGeneracion";
             // 
-            // panelTipoCategoria
+            // lblHabitat
             // 
-            this.panelTipoCategoria.Controls.Add(this.lblCategoria);
-            this.panelTipoCategoria.Controls.Add(this.label6);
-            this.panelTipoCategoria.Controls.Add(this.label5);
-            this.panelTipoCategoria.Controls.Add(this.lblTipo);
-            this.panelTipoCategoria.Location = new System.Drawing.Point(399, 128);
-            this.panelTipoCategoria.Name = "panelTipoCategoria";
-            this.panelTipoCategoria.Size = new System.Drawing.Size(307, 182);
-            this.panelTipoCategoria.TabIndex = 6;
-            // 
-            // lblCategoria
-            // 
-            this.lblCategoria.AutoSize = true;
-            this.lblCategoria.Location = new System.Drawing.Point(204, 96);
-            this.lblCategoria.Name = "lblCategoria";
-            this.lblCategoria.Size = new System.Drawing.Size(35, 13);
-            this.lblCategoria.TabIndex = 8;
-            this.lblCategoria.Text = "label7";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(183, 49);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(105, 20);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Clasificacion";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(55, 49);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(43, 20);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Tipo";
-            // 
-            // lblTipo
-            // 
-            this.lblTipo.AutoSize = true;
-            this.lblTipo.Location = new System.Drawing.Point(63, 96);
-            this.lblTipo.Name = "lblTipo";
-            this.lblTipo.Size = new System.Drawing.Size(38, 13);
-            this.lblTipo.TabIndex = 0;
-            this.lblTipo.Text = "lblTipo";
-            // 
-            // panelAtributos
-            // 
-            this.panelAtributos.Controls.Add(this.lblDefensa);
-            this.panelAtributos.Controls.Add(this.lblAtaque);
-            this.panelAtributos.Controls.Add(this.lblAltura);
-            this.panelAtributos.Controls.Add(this.lblSalud);
-            this.panelAtributos.Controls.Add(this.label9);
-            this.panelAtributos.Controls.Add(this.label8);
-            this.panelAtributos.Controls.Add(this.label7);
-            this.panelAtributos.Controls.Add(this.label2);
-            this.panelAtributos.Location = new System.Drawing.Point(399, 128);
-            this.panelAtributos.Name = "panelAtributos";
-            this.panelAtributos.Size = new System.Drawing.Size(307, 182);
-            this.panelAtributos.TabIndex = 9;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.lblDescripcion);
-            this.panel1.Controls.Add(this.label10);
-            this.panel1.Location = new System.Drawing.Point(399, 128);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(307, 182);
-            this.panel1.TabIndex = 16;
-            // 
-            // lblDescripcion
-            // 
-            this.lblDescripcion.AutoSize = true;
-            this.lblDescripcion.Location = new System.Drawing.Point(138, 56);
-            this.lblDescripcion.Name = "lblDescripcion";
-            this.lblDescripcion.Size = new System.Drawing.Size(41, 13);
-            this.lblDescripcion.TabIndex = 10;
-            this.lblDescripcion.Text = "label11";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(110, 18);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(98, 20);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Descripcion";
-            // 
-            // lblDefensa
-            // 
-            this.lblDefensa.AutoSize = true;
-            this.lblDefensa.Location = new System.Drawing.Point(224, 152);
-            this.lblDefensa.Name = "lblDefensa";
-            this.lblDefensa.Size = new System.Drawing.Size(57, 13);
-            this.lblDefensa.TabIndex = 15;
-            this.lblDefensa.Text = "lblDefensa";
-            // 
-            // lblAtaque
-            // 
-            this.lblAtaque.AutoSize = true;
-            this.lblAtaque.Location = new System.Drawing.Point(43, 152);
-            this.lblAtaque.Name = "lblAtaque";
-            this.lblAtaque.Size = new System.Drawing.Size(41, 13);
-            this.lblAtaque.TabIndex = 14;
-            this.lblAtaque.Text = "label12";
-            // 
-            // lblAltura
-            // 
-            this.lblAltura.AutoSize = true;
-            this.lblAltura.Location = new System.Drawing.Point(224, 56);
-            this.lblAltura.Name = "lblAltura";
-            this.lblAltura.Size = new System.Drawing.Size(41, 13);
-            this.lblAltura.TabIndex = 13;
-            this.lblAltura.Text = "label11";
-            // 
-            // lblSalud
-            // 
-            this.lblSalud.AutoSize = true;
-            this.lblSalud.Location = new System.Drawing.Point(43, 56);
-            this.lblSalud.Name = "lblSalud";
-            this.lblSalud.Size = new System.Drawing.Size(41, 13);
-            this.lblSalud.TabIndex = 12;
-            this.lblSalud.Text = "label10";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(219, 116);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 20);
-            this.label9.TabIndex = 11;
-            this.label9.Text = "Defensa";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(25, 116);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(63, 20);
-            this.label8.TabIndex = 10;
-            this.label8.Text = "Ataque";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(223, 18);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(55, 20);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "Altura";
+            this.lblHabitat.AutoSize = true;
+            this.lblHabitat.Location = new System.Drawing.Point(227, 106);
+            this.lblHabitat.Name = "lblHabitat";
+            this.lblHabitat.Size = new System.Drawing.Size(35, 13);
+            this.lblHabitat.TabIndex = 2;
+            this.lblHabitat.Text = "label3";
             // 
             // label2
             // 
@@ -671,15 +558,95 @@
             this.label2.TabIndex = 8;
             this.label2.Text = "Salud";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(223, 18);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(55, 20);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Altura";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(25, 116);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(63, 20);
+            this.label8.TabIndex = 10;
+            this.label8.Text = "Ataque";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Segoe UI Emoji", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(219, 116);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(70, 20);
+            this.label9.TabIndex = 11;
+            this.label9.Text = "Defensa";
+            // 
+            // lblSalud
+            // 
+            this.lblSalud.AutoSize = true;
+            this.lblSalud.Location = new System.Drawing.Point(43, 56);
+            this.lblSalud.Name = "lblSalud";
+            this.lblSalud.Size = new System.Drawing.Size(41, 13);
+            this.lblSalud.TabIndex = 12;
+            this.lblSalud.Text = "label10";
+            // 
+            // lblAltura
+            // 
+            this.lblAltura.AutoSize = true;
+            this.lblAltura.Location = new System.Drawing.Point(224, 56);
+            this.lblAltura.Name = "lblAltura";
+            this.lblAltura.Size = new System.Drawing.Size(41, 13);
+            this.lblAltura.TabIndex = 13;
+            this.lblAltura.Text = "label11";
+            // 
+            // lblAtaque
+            // 
+            this.lblAtaque.AutoSize = true;
+            this.lblAtaque.Location = new System.Drawing.Point(43, 152);
+            this.lblAtaque.Name = "lblAtaque";
+            this.lblAtaque.Size = new System.Drawing.Size(41, 13);
+            this.lblAtaque.TabIndex = 14;
+            this.lblAtaque.Text = "label12";
+            // 
+            // lblDefensa
+            // 
+            this.lblDefensa.AutoSize = true;
+            this.lblDefensa.Location = new System.Drawing.Point(224, 152);
+            this.lblDefensa.Name = "lblDefensa";
+            this.lblDefensa.Size = new System.Drawing.Size(57, 13);
+            this.lblDefensa.TabIndex = 15;
+            this.lblDefensa.Text = "lblDefensa";
+            // 
+            // panelAtributos
+            // 
+            this.panelAtributos.Controls.Add(this.panelDescripcion2);
+            this.panelAtributos.Controls.Add(this.lblDefensa);
+            this.panelAtributos.Controls.Add(this.lblAtaque);
+            this.panelAtributos.Controls.Add(this.lblAltura);
+            this.panelAtributos.Controls.Add(this.lblSalud);
+            this.panelAtributos.Controls.Add(this.label9);
+            this.panelAtributos.Controls.Add(this.label8);
+            this.panelAtributos.Controls.Add(this.label7);
+            this.panelAtributos.Controls.Add(this.label2);
+            this.panelAtributos.Location = new System.Drawing.Point(0, 3);
+            this.panelAtributos.Name = "panelAtributos";
+            this.panelAtributos.Size = new System.Drawing.Size(307, 182);
+            this.panelAtributos.TabIndex = 9;
+            // 
             // PokemonDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 494);
-            this.Controls.Add(this.panel1);
-            this.Controls.Add(this.panelAtributos);
             this.Controls.Add(this.panelTipoCategoria);
-            this.Controls.Add(this.panelDescripcion);
+            this.Controls.Add(this.panelGeneracion);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.n10_btn);
             this.Controls.Add(this.n9_btn);
@@ -704,15 +671,14 @@
             this.Name = "PokemonDetalle";
             this.Text = "Main1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panelDescripcion.ResumeLayout(false);
-            this.panelGeneracion.ResumeLayout(false);
-            this.panelGeneracion.PerformLayout();
             this.panelTipoCategoria.ResumeLayout(false);
             this.panelTipoCategoria.PerformLayout();
+            this.panelDescripcion2.ResumeLayout(false);
+            this.panelDescripcion2.PerformLayout();
+            this.panelGeneracion.ResumeLayout(false);
+            this.panelGeneracion.PerformLayout();
             this.panelAtributos.ResumeLayout(false);
             this.panelAtributos.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -740,28 +706,25 @@
         private RJButton n7_btn;
         private RJButton n6_btn;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Panel panelDescripcion;
+        private System.Windows.Forms.Panel panelTipoCategoria;
+        private System.Windows.Forms.Label lblTipo;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panelDescripcion2;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Panel panelGeneracion;
         private System.Windows.Forms.Label lblHabitat;
         private System.Windows.Forms.Label lblGeneracion;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Panel panelTipoCategoria;
-        private System.Windows.Forms.Label lblTipo;
-        private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panelAtributos;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblDefensa;
         private System.Windows.Forms.Label lblAtaque;
         private System.Windows.Forms.Label lblAltura;
         private System.Windows.Forms.Label lblSalud;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label lblDescripcion;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label2;
     }
 }

@@ -91,39 +91,38 @@ public class PokemonDAO
         return nombresTipos;
 
     }
-    public PokemonClass ObtenerPokemonPorId(int id)
+    public Pokemon ObtenerPokemonPorNombre(string nombre)
     {
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
             string query = @"
-            SELECT p.*, c.Nombre AS NombreCategoria, h.Nombre AS NombreHabitat
-            FROM Pokemon p
-            JOIN Categoria c ON p.idCategoria = c.idCategoria
-            JOIN Habitat h ON p.idHabitat = h.idHabitat
-            WHERE p.IdPokemon = @Id";
+    SELECT p.*, c.Nombre AS NombreCategoria, h.Nombre AS NombreHabitat
+    FROM Pokemon p
+    JOIN Categorias c ON p.idCategoria = c.idCategoria
+    JOIN Habitats h ON p.idHabitat = h.idHabitat
+    WHERE p.Nombre = @Nombre";
             SqlCommand command = new SqlCommand(query, connection);
-            command.Parameters.AddWithValue("@Id", id);
+            command.Parameters.AddWithValue("@Nombre", nombre);
 
             connection.Open();
             SqlDataReader reader = command.ExecuteReader();
 
             if (reader.Read())
             {
-                return new PokemonClass
+                return new Pokemon
                 {
                     IdPokemon = reader.GetInt32(reader.GetOrdinal("IdPokemon")),
                     Nombre = reader.GetString(reader.GetOrdinal("Nombre")),
                     Descripcion = reader.GetString(reader.GetOrdinal("Descripcion")),
-                    Tipo = string.Join(", ", ObtenerTiposPokemon(id)),
-                    Altura = reader.GetDecimal(reader.GetOrdinal("Altura")).ToString(),
-
-                    Peso = reader.GetDecimal(reader.GetOrdinal("Peso")).ToString(),
-
-                    Salud = reader.GetInt32(reader.GetOrdinal("Salud")),
-                    Ataque = reader.GetInt32(reader.GetOrdinal("Ataque")),
-                    Defensa = reader.GetInt32(reader.GetOrdinal("Defensa")),
+                    Tipo = string.Join(", ", ObtenerTiposPokemon(reader.GetInt32(reader.GetOrdinal("IdPokemon")))),
+                    Altura = reader.GetString(reader.GetOrdinal("Altura")),
+                    Peso = reader.GetString(reader.GetOrdinal("Peso")),
+                    Salud = int.TryParse(reader.GetString(reader.GetOrdinal("Salud")), out int salud) ? salud : 0,
+                    Ataque = int.TryParse(reader.GetString(reader.GetOrdinal("Ataque")), out int ataque) ? ataque : 0,
+                    Defensa = int.TryParse(reader.GetString(reader.GetOrdinal("Defensa")), out int defensa) ? defensa : 0,
                     Habitat = reader.GetString(reader.GetOrdinal("NombreHabitat")),
                     Generacion = reader.GetInt32(reader.GetOrdinal("idGeneracion")),
+                    Categoria = reader.GetString(reader.GetOrdinal("NombreCategoria")),
                     // Agrega más propiedades según lo necesites
                 };
             }
@@ -139,10 +138,10 @@ public class PokemonDAO
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
             string query = @"
-            SELECT t.Nombre
-            FROM Tipo t
-            JOIN Tipo_Pokemones tp ON t.idTipo = tp.idTipo
-            WHERE tp.idPokemon = @IdPokemon";
+        SELECT t.Nombre
+        FROM Tipos t
+        JOIN Tipos_Pokemons tp ON t.idTipo = tp.idTipo
+        WHERE tp.idPokemon = @IdPokemon";
             SqlCommand command = new SqlCommand(query, connection);
             command.Parameters.AddWithValue("@IdPokemon", idPokemon);
 
@@ -151,12 +150,16 @@ public class PokemonDAO
 
             while (reader.Read())
             {
-                tipos.Add(reader.GetString(reader.GetOrdinal("Nombre")));
+                if (!reader.IsDBNull(reader.GetOrdinal("Nombre")))
+                {
+                    tipos.Add(reader.GetString(reader.GetOrdinal("Nombre")));
+                }
             }
         }
 
         return tipos;
     }
+
 
 
 }
