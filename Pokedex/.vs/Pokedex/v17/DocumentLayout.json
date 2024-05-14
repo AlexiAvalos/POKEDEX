@@ -3,6 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\hp\\POKEDEX\\Pokedex\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|c:\\users\\hp\\pokedex\\pokedex\\pokedex\\vistapokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistapokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -93,6 +94,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|c:\\users\\hp\\pokedex\\pokedex\\pokedex\\main1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\main1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+>>>>>>> 2441536261f33169aaf0b473e683c6e3efe90d8e
     }
   ],
   "DocumentGroupContainers": [
@@ -102,6 +107,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< HEAD
           "SelectedChildIndex": 5,
           "Children": [
             {
@@ -162,6 +168,18 @@
               "RelativeDocumentMoniker": "Pokedex\\VistaPokemon.cs",
               "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaPokemon.cs [Dise\u00F1o]",
               "RelativeToolTip": "Pokedex\\VistaPokemon.cs [Dise\u00F1o]",
+=======
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Main1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Main1.cs",
+              "RelativeDocumentMoniker": "Pokedex\\Main1.cs",
+              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Main1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Pokedex\\Main1.cs [Dise\u00F1o]",
+>>>>>>> 2441536261f33169aaf0b473e683c6e3efe90d8e
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-12T18:25:23.89Z",
               "EditorCaption": " [Dise\u00F1o]"
