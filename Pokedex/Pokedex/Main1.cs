@@ -16,6 +16,7 @@ namespace Pokedex
         {
             InitializeComponent();
         }
+<<<<<<< HEAD
 
 
         //no moverle que se rompe
@@ -56,5 +57,7 @@ namespace Pokedex
             vistaTipo.Show();
             this.Hide();
         }
+=======
+>>>>>>> 2441536261f33169aaf0b473e683c6e3efe90d8e
     }
 }
