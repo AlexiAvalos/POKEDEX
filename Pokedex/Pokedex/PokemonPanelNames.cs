@@ -1,4 +1,5 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Pokedex
@@ -16,6 +17,8 @@ namespace Pokedex
                 Invalidate(); // Invalidar el control para redibujar
             }
         }
+
+        public event EventHandler PokemonSeleccionado;
 
         protected override void OnPaint(PaintEventArgs e)
         {
@@ -48,6 +51,15 @@ namespace Pokedex
 
             // Establecer la fuente y el tamaño del texto
             Font = new Font("Segoe UI Emoji", 10, FontStyle.Regular);
+
+            // Manejar el evento de clic en el panel
+            Click += PokemonPanelNames_Click;
+        }
+
+        private void PokemonPanelNames_Click(object sender, EventArgs e)
+        {
+            // Al hacer clic en el panel, se dispara el evento PokemonSeleccionado
+            PokemonSeleccionado?.Invoke(this, e);
         }
     }
 }

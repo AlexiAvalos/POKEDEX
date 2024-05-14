@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Pokedex;
+using System.Collections.Generic;
 using System.Data.SqlClient;
 
 public class PokemonDAO
@@ -88,6 +89,74 @@ public class PokemonDAO
         }
 
         return nombresTipos;
+
     }
+    public PokemonClass ObtenerPokemonPorId(int id)
+    {
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            string query = @"
+            SELECT p.*, c.Nombre AS NombreCategoria, h.Nombre AS NombreHabitat
+            FROM Pokemon p
+            JOIN Categoria c ON p.idCategoria = c.idCategoria
+            JOIN Habitat h ON p.idHabitat = h.idHabitat
+            WHERE p.IdPokemon = @Id";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@Id", id);
+
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            if (reader.Read())
+            {
+                return new PokemonClass
+                {
+                    IdPokemon = reader.GetInt32(reader.GetOrdinal("IdPokemon")),
+                    Nombre = reader.GetString(reader.GetOrdinal("Nombre")),
+                    Descripcion = reader.GetString(reader.GetOrdinal("Descripcion")),
+                    Tipo = string.Join(", ", ObtenerTiposPokemon(id)),
+                    Altura = reader.GetDecimal(reader.GetOrdinal("Altura")).ToString(),
+
+                    Peso = reader.GetDecimal(reader.GetOrdinal("Peso")).ToString(),
+
+                    Salud = reader.GetInt32(reader.GetOrdinal("Salud")),
+                    Ataque = reader.GetInt32(reader.GetOrdinal("Ataque")),
+                    Defensa = reader.GetInt32(reader.GetOrdinal("Defensa")),
+                    Habitat = reader.GetString(reader.GetOrdinal("NombreHabitat")),
+                    Generacion = reader.GetInt32(reader.GetOrdinal("idGeneracion")),
+                    // Agrega más propiedades según lo necesites
+                };
+            }
+        }
+
+        return null; // Retornar null si no se encuentra el Pokémon
+    }
+
+    private List<string> ObtenerTiposPokemon(int idPokemon)
+    {
+        List<string> tipos = new List<string>();
+
+        using (SqlConnection connection = new SqlConnection(connectionString))
+        {
+            string query = @"
+            SELECT t.Nombre
+            FROM Tipo t
+            JOIN Tipo_Pokemones tp ON t.idTipo = tp.idTipo
+            WHERE tp.idPokemon = @IdPokemon";
+            SqlCommand command = new SqlCommand(query, connection);
+            command.Parameters.AddWithValue("@IdPokemon", idPokemon);
+
+            connection.Open();
+            SqlDataReader reader = command.ExecuteReader();
+
+            while (reader.Read())
+            {
+                tipos.Add(reader.GetString(reader.GetOrdinal("Nombre")));
+            }
+        }
+
+        return tipos;
+    }
+
 
 }

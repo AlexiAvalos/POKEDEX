@@ -121,7 +121,7 @@
   <data name="pokemonPanel4.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA0gAAAEYCAYAAABm9tYFAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAFXxJREFUeF7t3cGLZelZBvBgAjIDyVpwIYGM0zMZBuyVm3ZAcCMKWYcEQZKNCO7c
+        vQAADr0BR/uQrQAAFXxJREFUeF7t3cGLZelZBvBgAjIDyVpwIYGM0zMZBuyVm3ZAcCMKWYcEQZKNCO7c
         unSh4D8giAsXbs0f4DpMAq5mzEYJbtwIRjMxDEmX53TuKU+95ztf9+Otb7q7vt8Pnr5Vt5665+3lQ4fJ
         5wAAAAAAAAAAAAAAAAAAAAAAAAAAAACAz9rNi+TNN99cXwEAAK512ButvP/+++vrZ+5wSCsGEgAAcE8O
         e6MVAwkAAJjBYW+0YiABAAAzOOyNVgwkAABgBoe90crLGkgHH//+7998vBy0zz/90i/dPHr06JDLrwAA
@@ -219,7 +219,7 @@
   <data name="pokemonPanel3.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA0gAAAEYCAYAAABm9tYFAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vQAADr0BR/uQrQAAFXxJREFUeF7t3cGLZelZBvBgAjIDyVpwIYGM0zMZBuyVm3ZAcCMKWYcEQZKNCO7c
+        vAAADrwBlbxySQAAFXxJREFUeF7t3cGLZelZBvBgAjIDyVpwIYGM0zMZBuyVm3ZAcCMKWYcEQZKNCO7c
         unSh4D8giAsXbs0f4DpMAq5mzEYJbtwIRjMxDEmX53TuKU+95ztf9+Otb7q7vt8Pnr5Vt5665+3lQ4fJ
         5wAAAAAAAAAAAAAAAAAAAAAAAAAAAACAz9rNi+TNN99cXwEAAK512ButvP/+++vrZ+5wSCsGEgAAcE8O
         e6MVAwkAAJjBYW+0YiABAAAzOOyNVgwkAABgBoe90crLGkgHH//+7998vBy0zz/90i/dPHr06JDLrwAA
@@ -317,7 +317,7 @@
   <data name="pokemonPanel2.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA0gAAAEYCAYAAABm9tYFAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vwAADr8BOAVTJAAAFXxJREFUeF7t3cGLZelZBvBgAjIDyVpwIYGM0zMZBuyVm3ZAcCMKWYcEQZKNCO7c
+        vgAADr4B6kKxwAAAFXxJREFUeF7t3cGLZelZBvBgAjIDyVpwIYGM0zMZBuyVm3ZAcCMKWYcEQZKNCO7c
         unSh4D8giAsXbs0f4DpMAq5mzEYJbtwIRjMxDEmX53TuKU+95ztf9+Otb7q7vt8Pnr5Vt5665+3lQ4fJ
         5wAAAAAAAAAAAAAAAAAAAAAAAAAAAACAz9rNi+TNN99cXwEAAK512ButvP/+++vrZ+5wSCsGEgAAcE8O
         e6MVAwkAAJjBYW+0YiABAAAzOOyNVgwkAABgBoe90crLGkgHH//+7998vBy0zz/90i/dPHr06JDLrwAA
@@ -415,7 +415,7 @@
   <data name="pokemonPanel1.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAA0gAAAEYCAYAAABm9tYFAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wAAADsABataJCQAAFXxJREFUeF7t3cGLZelZBvBgAjIDyVpwIYGM0zMZBuyVm3ZAcCMKWYcEQZKNCO7c
+        vwAADr8BOAVTJAAAFXxJREFUeF7t3cGLZelZBvBgAjIDyVpwIYGM0zMZBuyVm3ZAcCMKWYcEQZKNCO7c
         unSh4D8giAsXbs0f4DpMAq5mzEYJbtwIRjMxDEmX53TuKU+95ztf9+Otb7q7vt8Pnr5Vt5665+3lQ4fJ
         5wAAAAAAAAAAAAAAAAAAAAAAAAAAAACAz9rNi+TNN99cXwEAAK512ButvP/+++vrZ+5wSCsGEgAAcE8O
         e6MVAwkAAJjBYW+0YiABAAAzOOyNVgwkAABgBoe90crLGkgHH//+7998vBy0zz/90i/dPHr06JDLrwAA
