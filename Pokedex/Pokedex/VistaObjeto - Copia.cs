@@ -31,12 +31,12 @@ namespace Pokedex
 
         private void MostrarDetallesObjetoEvolutivo(string nombreObjetoEvolutivo)
         {
-            // Lógica para mostrar los detalles del objeto evolutivo seleccionado
+            
             MessageBox.Show($"Mostrando detalles de {nombreObjetoEvolutivo}");
         }
 
         //no moverle que se rompe
-        private void rjButton8_Click(object sender, EventArgs e)
+        private void rjButton8_Click(object sender, EventArgs e) 
         {
 
         }

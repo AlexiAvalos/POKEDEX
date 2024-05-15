@@ -47,6 +47,4 @@ C:\Users\hp\POKEDEX\Pokedex\Pokedex\obj\Debug\Pokedex.VistaPokemon.resources
 C:\Users\hp\POKEDEX\Pokedex\Pokedex\obj\Debug\Pokedex.VistaRegion.resources
 C:\Users\hp\POKEDEX\Pokedex\Pokedex\obj\Debug\Pokedex.VistaObjetos.resources
 C:\Users\hp\POKEDEX\Pokedex\Pokedex\obj\Debug\Pokedex.VistaTipo.resources
-=======
->>>>>>> 2441536261f33169aaf0b473e683c6e3efe90d8e
 C:\Users\hp\POKEDEX\Pokedex\Pokedex\obj\Debug\Pokedex.PokemonDetalle.resources
