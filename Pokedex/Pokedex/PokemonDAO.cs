@@ -123,12 +123,12 @@ public class PokemonDAO
                     Habitat = reader.GetString(reader.GetOrdinal("NombreHabitat")),
                     Generacion = reader.GetInt32(reader.GetOrdinal("idGeneracion")),
                     Categoria = reader.GetString(reader.GetOrdinal("NombreCategoria")),
-                    // Agrega más propiedades según lo necesites
+                    
                 };
             }
         }
 
-        return null; // Retornar null si no se encuentra el Pokémon
+        return null; 
     }
 
     private List<string> ObtenerTiposPokemon(int idPokemon)
