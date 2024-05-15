@@ -52,6 +52,11 @@ namespace Pokedex
             vistaTipo.Show();
             this.Hide();
         }
+
+        private void Main1_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
 

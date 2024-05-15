@@ -1,6 +1,6 @@
 ﻿namespace Pokedex
 {
-    partial class Main1
+    partial class Registro_Objeto
     {
         /// <summary>
         /// Required designer variable.
@@ -28,20 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main1));
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pokemonPanel4 = new Pokedex.PokemonPanel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.pokemonPanel3 = new Pokedex.PokemonPanel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pokemonPanel2 = new Pokedex.PokemonPanel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pokemonPanel1 = new Pokedex.PokemonPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.nombreObj_txt = new System.Windows.Forms.TextBox();
+            this.nombreObj_lbl = new System.Windows.Forms.Label();
+            this.descObj_txt = new System.Windows.Forms.TextBox();
+            this.descObj_lbl = new System.Windows.Forms.Label();
+            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.dataGridViewObj = new System.Windows.Forms.DataGridView();
+            this.guardarObj_btn = new Pokedex.RJButton();
             this.n10_btn = new Pokedex.RJButton();
             this.n9_btn = new Pokedex.RJButton();
             this.n8_btn = new Pokedex.RJButton();
@@ -61,156 +61,158 @@
             this.down_btn = new Pokedex.RJButton();
             this.left_btn = new Pokedex.RJButton();
             this.up_btn = new Pokedex.RJButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.pokemonPanel4.SuspendLayout();
-            this.pokemonPanel3.SuspendLayout();
-            this.pokemonPanel2.SuspendLayout();
-            this.pokemonPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewObj)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox4.BackgroundImage = global::Pokedex.Properties.Resources.Pokeballs2;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(490, 172);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(136, 91);
-            this.pictureBox4.TabIndex = 31;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(396, 125);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(310, 185);
-            this.pictureBox3.TabIndex = 30;
-            this.pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Pokedex.Properties.Resources.pkdxfinal;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Location = new System.Drawing.Point(0, -1);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(756, 495);
-            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // pictureBox3
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(50, 107);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(298, 250);
-            this.pictureBox2.TabIndex = 32;
-            this.pictureBox2.TabStop = false;
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(399, 125);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(310, 184);
+            this.pictureBox3.TabIndex = 31;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox5
             // 
-            this.pictureBox5.BackgroundImage = global::Pokedex.Properties.Resources.R;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(64, 135);
+            this.pictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox5.Location = new System.Drawing.Point(44, 104);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(273, 86);
-            this.pictureBox5.TabIndex = 33;
+            this.pictureBox5.Size = new System.Drawing.Size(310, 254);
+            this.pictureBox5.TabIndex = 56;
             this.pictureBox5.TabStop = false;
             // 
-            // pokemonPanel4
+            // nombreObj_txt
             // 
-            this.pokemonPanel4.AllowDrop = true;
-            this.pokemonPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.pokemonPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel4.BackgroundImage")));
-            this.pokemonPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pokemonPanel4.Controls.Add(this.label4);
-            this.pokemonPanel4.Location = new System.Drawing.Point(225, 297);
-            this.pokemonPanel4.Name = "pokemonPanel4";
-            this.pokemonPanel4.Size = new System.Drawing.Size(100, 35);
-            this.pokemonPanel4.TabIndex = 35;
+            this.nombreObj_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.nombreObj_txt.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreObj_txt.Location = new System.Drawing.Point(171, 196);
+            this.nombreObj_txt.Name = "nombreObj_txt";
+            this.nombreObj_txt.Size = new System.Drawing.Size(156, 21);
+            this.nombreObj_txt.TabIndex = 60;
+            this.nombreObj_txt.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
-            // label4
+            // nombreObj_lbl
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.label4.Location = new System.Drawing.Point(20, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 15);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Tipos";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
+            this.nombreObj_lbl.AutoSize = true;
+            this.nombreObj_lbl.BackColor = System.Drawing.Color.Black;
+            this.nombreObj_lbl.Font = new System.Drawing.Font("Showcard Gothic", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombreObj_lbl.ForeColor = System.Drawing.Color.Gold;
+            this.nombreObj_lbl.Location = new System.Drawing.Point(59, 195);
+            this.nombreObj_lbl.Name = "nombreObj_lbl";
+            this.nombreObj_lbl.Size = new System.Drawing.Size(70, 18);
+            this.nombreObj_lbl.TabIndex = 59;
+            this.nombreObj_lbl.Text = "Nombre:";
             // 
-            // pokemonPanel3
+            // descObj_txt
             // 
-            this.pokemonPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.pokemonPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel3.BackgroundImage")));
-            this.pokemonPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pokemonPanel3.Controls.Add(this.label3);
-            this.pokemonPanel3.Location = new System.Drawing.Point(64, 300);
-            this.pokemonPanel3.Name = "pokemonPanel3";
-            this.pokemonPanel3.Size = new System.Drawing.Size(100, 32);
-            this.pokemonPanel3.TabIndex = 35;
+            this.descObj_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.descObj_txt.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descObj_txt.Location = new System.Drawing.Point(171, 235);
+            this.descObj_txt.Name = "descObj_txt";
+            this.descObj_txt.Size = new System.Drawing.Size(156, 21);
+            this.descObj_txt.TabIndex = 62;
             // 
-            // label3
+            // descObj_lbl
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(14, 8);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 15);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Objetos";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
+            this.descObj_lbl.AutoSize = true;
+            this.descObj_lbl.BackColor = System.Drawing.Color.Black;
+            this.descObj_lbl.Font = new System.Drawing.Font("Showcard Gothic", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descObj_lbl.ForeColor = System.Drawing.Color.Gold;
+            this.descObj_lbl.Location = new System.Drawing.Point(59, 234);
+            this.descObj_lbl.Name = "descObj_lbl";
+            this.descObj_lbl.Size = new System.Drawing.Size(104, 18);
+            this.descObj_lbl.TabIndex = 61;
+            this.descObj_lbl.Text = "Descripción:";
             // 
-            // pokemonPanel2
+            // pictureBox7
             // 
-            this.pokemonPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.pokemonPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel2.BackgroundImage")));
-            this.pokemonPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pokemonPanel2.Controls.Add(this.label2);
-            this.pokemonPanel2.Location = new System.Drawing.Point(225, 237);
-            this.pokemonPanel2.Name = "pokemonPanel2";
-            this.pokemonPanel2.Size = new System.Drawing.Size(100, 37);
-            this.pokemonPanel2.TabIndex = 35;
+            this.pictureBox7.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox7.BackgroundImage = global::Pokedex.Properties.Resources.Objetos;
+            this.pictureBox7.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox7.Location = new System.Drawing.Point(124, 125);
+            this.pictureBox7.Name = "pictureBox7";
+            this.pictureBox7.Size = new System.Drawing.Size(143, 50);
+            this.pictureBox7.TabIndex = 65;
+            this.pictureBox7.TabStop = false;
             // 
-            // label2
+            // dataGridViewObj
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(17, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 15);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Regiones";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
+            this.dataGridViewObj.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewObj.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridViewObj.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewObj.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridViewObj.GridColor = System.Drawing.SystemColors.ControlLightLight;
+            this.dataGridViewObj.Location = new System.Drawing.Point(407, 131);
+            this.dataGridViewObj.Name = "dataGridViewObj";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewObj.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Red;
+            this.dataGridViewObj.RowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridViewObj.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
+            this.dataGridViewObj.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dataGridViewObj.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
+            this.dataGridViewObj.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Red;
+            this.dataGridViewObj.Size = new System.Drawing.Size(291, 173);
+            this.dataGridViewObj.TabIndex = 66;
             // 
-            // pokemonPanel1
+            // guardarObj_btn
             // 
-            this.pokemonPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.pokemonPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel1.BackgroundImage")));
-            this.pokemonPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pokemonPanel1.Controls.Add(this.label1);
-            this.pokemonPanel1.Location = new System.Drawing.Point(64, 237);
-            this.pokemonPanel1.Name = "pokemonPanel1";
-            this.pokemonPanel1.Size = new System.Drawing.Size(100, 37);
-            this.pokemonPanel1.TabIndex = 34;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(14, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 15);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Pokemones";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.guardarObj_btn.BackColor = System.Drawing.Color.LightSeaGreen;
+            this.guardarObj_btn.BackgroundColor = System.Drawing.Color.LightSeaGreen;
+            this.guardarObj_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.guardarObj_btn.BorderRadius = 10;
+            this.guardarObj_btn.BorderSize = 0;
+            this.guardarObj_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.guardarObj_btn.Font = new System.Drawing.Font("Showcard Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guardarObj_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guardarObj_btn.Location = new System.Drawing.Point(124, 302);
+            this.guardarObj_btn.Name = "guardarObj_btn";
+            this.guardarObj_btn.Size = new System.Drawing.Size(143, 34);
+            this.guardarObj_btn.TabIndex = 63;
+            this.guardarObj_btn.Text = "Guardar";
+            this.guardarObj_btn.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.guardarObj_btn.UseVisualStyleBackColor = false;
+            this.guardarObj_btn.Click += new System.EventHandler(this.guardarObj_btn_Click);
             // 
             // n10_btn
             // 
@@ -222,10 +224,10 @@
             this.n10_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.n10_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n10_btn.ForeColor = System.Drawing.Color.Teal;
-            this.n10_btn.Location = new System.Drawing.Point(645, 375);
+            this.n10_btn.Location = new System.Drawing.Point(645, 373);
             this.n10_btn.Name = "n10_btn";
             this.n10_btn.Size = new System.Drawing.Size(52, 36);
-            this.n10_btn.TabIndex = 28;
+            this.n10_btn.TabIndex = 55;
             this.n10_btn.Text = "10";
             this.n10_btn.TextColor = System.Drawing.Color.Teal;
             this.n10_btn.UseVisualStyleBackColor = false;
@@ -240,10 +242,10 @@
             this.n9_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.n9_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n9_btn.ForeColor = System.Drawing.Color.Teal;
-            this.n9_btn.Location = new System.Drawing.Point(586, 375);
+            this.n9_btn.Location = new System.Drawing.Point(586, 373);
             this.n9_btn.Name = "n9_btn";
             this.n9_btn.Size = new System.Drawing.Size(52, 36);
-            this.n9_btn.TabIndex = 27;
+            this.n9_btn.TabIndex = 54;
             this.n9_btn.Text = "9";
             this.n9_btn.TextColor = System.Drawing.Color.Teal;
             this.n9_btn.UseVisualStyleBackColor = false;
@@ -258,10 +260,10 @@
             this.n8_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.n8_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n8_btn.ForeColor = System.Drawing.Color.Teal;
-            this.n8_btn.Location = new System.Drawing.Point(526, 375);
+            this.n8_btn.Location = new System.Drawing.Point(526, 373);
             this.n8_btn.Name = "n8_btn";
             this.n8_btn.Size = new System.Drawing.Size(52, 36);
-            this.n8_btn.TabIndex = 26;
+            this.n8_btn.TabIndex = 53;
             this.n8_btn.Text = "8";
             this.n8_btn.TextColor = System.Drawing.Color.Teal;
             this.n8_btn.UseVisualStyleBackColor = false;
@@ -276,14 +278,13 @@
             this.n7_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.n7_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n7_btn.ForeColor = System.Drawing.Color.Teal;
-            this.n7_btn.Location = new System.Drawing.Point(466, 375);
+            this.n7_btn.Location = new System.Drawing.Point(466, 373);
             this.n7_btn.Name = "n7_btn";
             this.n7_btn.Size = new System.Drawing.Size(52, 36);
-            this.n7_btn.TabIndex = 25;
+            this.n7_btn.TabIndex = 52;
             this.n7_btn.Text = "7";
             this.n7_btn.TextColor = System.Drawing.Color.Teal;
             this.n7_btn.UseVisualStyleBackColor = false;
-            this.n7_btn.Click += new System.EventHandler(this.rjButton8_Click);
             // 
             // n6_btn
             // 
@@ -295,10 +296,10 @@
             this.n6_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.n6_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n6_btn.ForeColor = System.Drawing.Color.Teal;
-            this.n6_btn.Location = new System.Drawing.Point(406, 375);
+            this.n6_btn.Location = new System.Drawing.Point(406, 373);
             this.n6_btn.Name = "n6_btn";
             this.n6_btn.Size = new System.Drawing.Size(52, 36);
-            this.n6_btn.TabIndex = 24;
+            this.n6_btn.TabIndex = 51;
             this.n6_btn.Text = "6";
             this.n6_btn.TextColor = System.Drawing.Color.Teal;
             this.n6_btn.UseVisualStyleBackColor = false;
@@ -313,10 +314,10 @@
             this.n5_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.n5_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n5_btn.ForeColor = System.Drawing.Color.Teal;
-            this.n5_btn.Location = new System.Drawing.Point(645, 333);
+            this.n5_btn.Location = new System.Drawing.Point(645, 331);
             this.n5_btn.Name = "n5_btn";
             this.n5_btn.Size = new System.Drawing.Size(52, 36);
-            this.n5_btn.TabIndex = 23;
+            this.n5_btn.TabIndex = 50;
             this.n5_btn.Text = "5";
             this.n5_btn.TextColor = System.Drawing.Color.Teal;
             this.n5_btn.UseVisualStyleBackColor = false;
@@ -331,10 +332,10 @@
             this.n4_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.n4_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n4_btn.ForeColor = System.Drawing.Color.Teal;
-            this.n4_btn.Location = new System.Drawing.Point(586, 333);
+            this.n4_btn.Location = new System.Drawing.Point(586, 331);
             this.n4_btn.Name = "n4_btn";
             this.n4_btn.Size = new System.Drawing.Size(52, 36);
-            this.n4_btn.TabIndex = 22;
+            this.n4_btn.TabIndex = 49;
             this.n4_btn.Text = "4";
             this.n4_btn.TextColor = System.Drawing.Color.Teal;
             this.n4_btn.UseVisualStyleBackColor = false;
@@ -349,10 +350,10 @@
             this.n3_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.n3_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n3_btn.ForeColor = System.Drawing.Color.Teal;
-            this.n3_btn.Location = new System.Drawing.Point(526, 333);
+            this.n3_btn.Location = new System.Drawing.Point(526, 331);
             this.n3_btn.Name = "n3_btn";
             this.n3_btn.Size = new System.Drawing.Size(52, 36);
-            this.n3_btn.TabIndex = 21;
+            this.n3_btn.TabIndex = 48;
             this.n3_btn.Text = "3";
             this.n3_btn.TextColor = System.Drawing.Color.Teal;
             this.n3_btn.UseVisualStyleBackColor = false;
@@ -367,10 +368,10 @@
             this.n2_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.n2_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n2_btn.ForeColor = System.Drawing.Color.Teal;
-            this.n2_btn.Location = new System.Drawing.Point(466, 333);
+            this.n2_btn.Location = new System.Drawing.Point(466, 331);
             this.n2_btn.Name = "n2_btn";
             this.n2_btn.Size = new System.Drawing.Size(52, 36);
-            this.n2_btn.TabIndex = 20;
+            this.n2_btn.TabIndex = 47;
             this.n2_btn.Text = "2";
             this.n2_btn.TextColor = System.Drawing.Color.Teal;
             this.n2_btn.UseVisualStyleBackColor = false;
@@ -385,10 +386,10 @@
             this.n1_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.n1_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.n1_btn.ForeColor = System.Drawing.Color.Teal;
-            this.n1_btn.Location = new System.Drawing.Point(406, 333);
+            this.n1_btn.Location = new System.Drawing.Point(406, 331);
             this.n1_btn.Name = "n1_btn";
             this.n1_btn.Size = new System.Drawing.Size(52, 36);
-            this.n1_btn.TabIndex = 19;
+            this.n1_btn.TabIndex = 46;
             this.n1_btn.Text = "1";
             this.n1_btn.TextColor = System.Drawing.Color.Teal;
             this.n1_btn.UseVisualStyleBackColor = false;
@@ -401,10 +402,10 @@
             this.power_btn.BorderRadius = 10;
             this.power_btn.BorderSize = 0;
             this.power_btn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.power_btn.Location = new System.Drawing.Point(186, 416);
+            this.power_btn.Location = new System.Drawing.Point(187, 416);
             this.power_btn.Name = "power_btn";
             this.power_btn.Size = new System.Drawing.Size(25, 23);
-            this.power_btn.TabIndex = 18;
+            this.power_btn.TabIndex = 45;
             this.power_btn.Text = "-";
             this.power_btn.TextColor = System.Drawing.SystemColors.ControlText;
             this.power_btn.UseVisualStyleBackColor = true;
@@ -419,10 +420,10 @@
             this.A_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.A_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.A_btn.ForeColor = System.Drawing.Color.White;
-            this.A_btn.Location = new System.Drawing.Point(309, 408);
+            this.A_btn.Location = new System.Drawing.Point(310, 408);
             this.A_btn.Name = "A_btn";
             this.A_btn.Size = new System.Drawing.Size(39, 39);
-            this.A_btn.TabIndex = 17;
+            this.A_btn.TabIndex = 44;
             this.A_btn.Text = "A";
             this.A_btn.TextColor = System.Drawing.Color.White;
             this.A_btn.UseVisualStyleBackColor = false;
@@ -437,10 +438,10 @@
             this.B_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.B_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.B_btn.ForeColor = System.Drawing.Color.White;
-            this.B_btn.Location = new System.Drawing.Point(277, 435);
+            this.B_btn.Location = new System.Drawing.Point(278, 435);
             this.B_btn.Name = "B_btn";
             this.B_btn.Size = new System.Drawing.Size(39, 39);
-            this.B_btn.TabIndex = 16;
+            this.B_btn.TabIndex = 43;
             this.B_btn.Text = "B";
             this.B_btn.TextColor = System.Drawing.Color.White;
             this.B_btn.UseVisualStyleBackColor = false;
@@ -455,10 +456,10 @@
             this.Y_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Y_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Y_btn.ForeColor = System.Drawing.Color.White;
-            this.Y_btn.Location = new System.Drawing.Point(245, 408);
+            this.Y_btn.Location = new System.Drawing.Point(246, 408);
             this.Y_btn.Name = "Y_btn";
             this.Y_btn.Size = new System.Drawing.Size(39, 39);
-            this.Y_btn.TabIndex = 15;
+            this.Y_btn.TabIndex = 42;
             this.Y_btn.Text = "Y";
             this.Y_btn.TextColor = System.Drawing.Color.White;
             this.Y_btn.UseVisualStyleBackColor = false;
@@ -473,10 +474,10 @@
             this.X_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.X_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.X_btn.ForeColor = System.Drawing.Color.White;
-            this.X_btn.Location = new System.Drawing.Point(277, 381);
+            this.X_btn.Location = new System.Drawing.Point(278, 381);
             this.X_btn.Name = "X_btn";
             this.X_btn.Size = new System.Drawing.Size(39, 39);
-            this.X_btn.TabIndex = 14;
+            this.X_btn.TabIndex = 41;
             this.X_btn.Text = "X";
             this.X_btn.TextColor = System.Drawing.Color.White;
             this.X_btn.UseVisualStyleBackColor = false;
@@ -491,10 +492,10 @@
             this.right_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.right_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.right_btn.ForeColor = System.Drawing.Color.White;
-            this.right_btn.Location = new System.Drawing.Point(114, 408);
+            this.right_btn.Location = new System.Drawing.Point(115, 408);
             this.right_btn.Name = "right_btn";
             this.right_btn.Size = new System.Drawing.Size(39, 39);
-            this.right_btn.TabIndex = 13;
+            this.right_btn.TabIndex = 40;
             this.right_btn.Text = "→";
             this.right_btn.TextColor = System.Drawing.Color.White;
             this.right_btn.UseVisualStyleBackColor = false;
@@ -509,10 +510,10 @@
             this.down_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.down_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.down_btn.ForeColor = System.Drawing.Color.White;
-            this.down_btn.Location = new System.Drawing.Point(82, 435);
+            this.down_btn.Location = new System.Drawing.Point(83, 435);
             this.down_btn.Name = "down_btn";
             this.down_btn.Size = new System.Drawing.Size(39, 39);
-            this.down_btn.TabIndex = 12;
+            this.down_btn.TabIndex = 39;
             this.down_btn.Text = "↓";
             this.down_btn.TextColor = System.Drawing.Color.White;
             this.down_btn.UseVisualStyleBackColor = false;
@@ -527,10 +528,10 @@
             this.left_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.left_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.left_btn.ForeColor = System.Drawing.Color.White;
-            this.left_btn.Location = new System.Drawing.Point(50, 408);
+            this.left_btn.Location = new System.Drawing.Point(51, 408);
             this.left_btn.Name = "left_btn";
             this.left_btn.Size = new System.Drawing.Size(39, 39);
-            this.left_btn.TabIndex = 11;
+            this.left_btn.TabIndex = 38;
             this.left_btn.Text = "←";
             this.left_btn.TextColor = System.Drawing.Color.White;
             this.left_btn.UseVisualStyleBackColor = false;
@@ -545,27 +546,27 @@
             this.up_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.up_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.up_btn.ForeColor = System.Drawing.Color.White;
-            this.up_btn.Location = new System.Drawing.Point(82, 381);
+            this.up_btn.Location = new System.Drawing.Point(83, 381);
             this.up_btn.Name = "up_btn";
             this.up_btn.Size = new System.Drawing.Size(39, 39);
-            this.up_btn.TabIndex = 10;
+            this.up_btn.TabIndex = 37;
             this.up_btn.Text = "↑";
             this.up_btn.TextColor = System.Drawing.Color.White;
             this.up_btn.UseVisualStyleBackColor = false;
             // 
-            // Main1
+            // Registro_Objeto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(755, 494);
-            this.Controls.Add(this.pokemonPanel4);
-            this.Controls.Add(this.pokemonPanel3);
-            this.Controls.Add(this.pokemonPanel2);
-            this.Controls.Add(this.pokemonPanel1);
+            this.ClientSize = new System.Drawing.Size(750, 494);
+            this.Controls.Add(this.dataGridViewObj);
+            this.Controls.Add(this.pictureBox7);
+            this.Controls.Add(this.guardarObj_btn);
+            this.Controls.Add(this.descObj_txt);
+            this.Controls.Add(this.descObj_lbl);
+            this.Controls.Add(this.nombreObj_txt);
+            this.Controls.Add(this.nombreObj_lbl);
             this.Controls.Add(this.pictureBox5);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.n10_btn);
             this.Controls.Add(this.n9_btn);
             this.Controls.Add(this.n8_btn);
@@ -585,60 +586,51 @@
             this.Controls.Add(this.down_btn);
             this.Controls.Add(this.left_btn);
             this.Controls.Add(this.up_btn);
+            this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "Main1";
-            this.Text = " ";
-            this.Load += new System.EventHandler(this.Main1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.Name = "Registro_Objeto";
+            this.Text = "Registro_Objeto";
+            this.Load += new System.EventHandler(this.Registro_Objeto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.pokemonPanel4.ResumeLayout(false);
-            this.pokemonPanel4.PerformLayout();
-            this.pokemonPanel3.ResumeLayout(false);
-            this.pokemonPanel3.PerformLayout();
-            this.pokemonPanel2.ResumeLayout(false);
-            this.pokemonPanel2.PerformLayout();
-            this.pokemonPanel1.ResumeLayout(false);
-            this.pokemonPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewObj)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.PictureBox pictureBox1;
-        private RJButton up_btn;
-        private RJButton left_btn;
-        private RJButton down_btn;
-        private RJButton right_btn;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private RJButton power_btn;
         private RJButton A_btn;
         private RJButton B_btn;
         private RJButton Y_btn;
         private RJButton X_btn;
-        private RJButton power_btn;
-        private RJButton n1_btn;
-        private RJButton n2_btn;
-        private RJButton n3_btn;
-        private RJButton n4_btn;
-        private RJButton n5_btn;
+        private RJButton right_btn;
+        private RJButton down_btn;
+        private RJButton left_btn;
+        private RJButton up_btn;
         private RJButton n10_btn;
         private RJButton n9_btn;
         private RJButton n8_btn;
         private RJButton n7_btn;
         private RJButton n6_btn;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private RJButton n5_btn;
+        private RJButton n4_btn;
+        private RJButton n3_btn;
+        private RJButton n2_btn;
+        private RJButton n1_btn;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private PokemonPanel pokemonPanel1;
-        private System.Windows.Forms.Label label1;
-        private PokemonPanel pokemonPanel2;
-        private System.Windows.Forms.Label label2;
-        private PokemonPanel pokemonPanel3;
-        private System.Windows.Forms.Label label3;
-        private PokemonPanel pokemonPanel4;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.TextBox nombreObj_txt;
+        private System.Windows.Forms.Label nombreObj_lbl;
+        private System.Windows.Forms.TextBox descObj_txt;
+        private System.Windows.Forms.Label descObj_lbl;
+        private RJButton guardarObj_btn;
+        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.DataGridView dataGridViewObj;
     }
 }

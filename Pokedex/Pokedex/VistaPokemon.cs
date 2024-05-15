@@ -11,7 +11,7 @@ namespace Pokedex
         public VistaPokemon()
         {
             InitializeComponent();
-            string connectionString = "Data Source=DESKTOP-J97KSH3;Initial Catalog=PokeWiki;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-UBBP1OB\\NICO;Initial Catalog=PokeWiki;Integrated Security=True";
             pokemonDAO = new PokemonDAO(connectionString);
             MostrarPokemones();
         }

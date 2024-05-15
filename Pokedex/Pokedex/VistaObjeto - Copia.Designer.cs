@@ -52,6 +52,7 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.registroObj_btn = new Pokedex.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -454,11 +455,32 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
+            // registroObj_btn
+            // 
+            this.registroObj_btn.BackColor = System.Drawing.Color.Gold;
+            this.registroObj_btn.BackgroundColor = System.Drawing.Color.Gold;
+            this.registroObj_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.registroObj_btn.BorderRadius = 10;
+            this.registroObj_btn.BorderSize = 0;
+            this.registroObj_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.registroObj_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.registroObj_btn.Font = new System.Drawing.Font("Showcard Gothic", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registroObj_btn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.registroObj_btn.Location = new System.Drawing.Point(497, 275);
+            this.registroObj_btn.Name = "registroObj_btn";
+            this.registroObj_btn.Size = new System.Drawing.Size(110, 34);
+            this.registroObj_btn.TabIndex = 33;
+            this.registroObj_btn.Text = "Registro";
+            this.registroObj_btn.TextColor = System.Drawing.SystemColors.ControlText;
+            this.registroObj_btn.UseVisualStyleBackColor = false;
+            this.registroObj_btn.Click += new System.EventHandler(this.registroObj_btn_Click);
+            // 
             // VistaObjetos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 494);
+            this.Controls.Add(this.registroObj_btn);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
@@ -485,6 +507,7 @@
             this.Controls.Add(this.pictureBox1);
             this.Name = "VistaObjetos";
             this.Text = "Main1";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VistaObjetos_FormClosed);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -519,5 +542,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private RJButton registroObj_btn;
     }
 }

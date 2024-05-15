@@ -11,7 +11,7 @@ namespace Pokedex
         public VistaObjetos()
         {
             InitializeComponent();
-            string connectionString = "Data Source=DESKTOP-J97KSH3;Initial Catalog=PokeWiki;Integrated Security=True";
+            string connectionString = "Data Source=DESKTOP-UBBP1OB\\NICO;Initial Catalog=PokeWiki;Integrated Security=True";
             pokemonDAO = new PokemonDAO(connectionString);
             MostrarObjetosEvolutivos();
         }
@@ -44,6 +44,17 @@ namespace Pokedex
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void registroObj_btn_Click(object sender, EventArgs e)
+        {
+            Form registroObj = new Registro_Objeto();
+            registroObj.Show();
+        }
+
+        private void VistaObjetos_FormClosed(object sender, FormClosedEventArgs e)
+        {
+   
         }
     }
 }

@@ -1,125 +1,73 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\hp\\POKEDEX\\Pokedex\\",
+  "WorkspaceRootPath": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|c:\\users\\hp\\pokedex\\pokedex\\pokedex\\vistaobjeto - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\vistaobjeto - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistaobjeto - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\pokemondetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\pokemondetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\pokemondetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\pokemondetalle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\classpokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\classpokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\pokemondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\pokemondao.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\vistapokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistapokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\pokemonpanelnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\pokemonpanelnames.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\vistapokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistapokemon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\pokemondetalle.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\pokemondetalle.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\vistaobjeto - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\vistaobjeto - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistaobjeto - copia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\main1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\main1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\main1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|c:\\users\\ivani\\pokedex\\pokedex\\pokedex\\main1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\main1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\main1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|c:\\users\\ivani\\pokedex\\pokedex\\pokedex\\objetodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\objetodal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\main1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\main1.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\main1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\main1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\main1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\properties\\settings.settings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\properties\\settings.settings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\properties\\settings.settings||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\pokemonpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\pokemonpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\pokemonpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\vistaregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistaregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\vistaregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\vistaregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistaregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\vistatipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\vistatipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistatipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\vistatipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistatipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\pokemonpaneltipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\pokemonpaneltipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\pokemonpaneltipos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\pokemonpanelobjetos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\pokemonpanelobjetos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\vistatipos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\vistatipos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistatipos.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\vistaregion.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\vistaregion.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistaregion.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\pokemonpanelregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\pokemonpanelregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\pokemonpanelregion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\vistaregion.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\vistaregion.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistaregion.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\hp\\POKEDEX\\Pokedex\\pokedex\\vistapokemon.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "AbsoluteMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|C:\\Users\\ivani\\POKEDEX\\Pokedex\\pokedex\\vistapokemon.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
       "RelativeMoniker": "D:0:0:{C976D169-4C82-41D3-803F-9A4F241E8CE0}|Pokedex\\Vista.csproj|solutionrelative:pokedex\\vistapokemon.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
     }
   ],
@@ -133,216 +81,105 @@
           "SelectedChildIndex": 3,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ObjetoDAL.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\ObjetoDAL.cs",
+              "RelativeDocumentMoniker": "Pokedex\\ObjetoDAL.cs",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\ObjetoDAL.cs",
+              "RelativeToolTip": "Pokedex\\ObjetoDAL.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T19:42:52.415Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "PokemonDetalle.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonDetalle.cs",
-              "RelativeDocumentMoniker": "Pokedex\\PokemonDetalle.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonDetalle.cs",
-              "RelativeToolTip": "Pokedex\\PokemonDetalle.cs",
-              "ViewState": "AQIAABcAAAAAAAAAAAA9wCUAAAAzAAAA",
+              "Title": "Main1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\Main1.cs",
+              "RelativeDocumentMoniker": "Pokedex\\Main1.cs",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\Main1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Pokedex\\Main1.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T03:45:03.908Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PokemonDetalle.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonDetalle.cs",
-              "RelativeDocumentMoniker": "Pokedex\\PokemonDetalle.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonDetalle.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Pokedex\\PokemonDetalle.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T03:44:33.626Z"
+              "WhenOpened": "2024-05-15T22:26:52.671Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "VistaObjeto - Copia.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaObjeto - Copia.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaObjeto - Copia.cs",
               "RelativeDocumentMoniker": "Pokedex\\VistaObjeto - Copia.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaObjeto - Copia.cs",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaObjeto - Copia.cs",
               "RelativeToolTip": "Pokedex\\VistaObjeto - Copia.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAAwCUAAAAhAAAA",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAowDgAAAADAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T04:11:47.572Z",
+              "WhenOpened": "2024-05-15T18:52:40.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VistaObjeto - Copia.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaObjeto - Copia.cs",
+              "RelativeDocumentMoniker": "Pokedex\\VistaObjeto - Copia.cs",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaObjeto - Copia.cs [Dise\u00F1o]",
+              "RelativeToolTip": "Pokedex\\VistaObjeto - Copia.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-13T23:37:20.519Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Main1.resx",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\Main1.resx",
+              "RelativeDocumentMoniker": "Pokedex\\Main1.resx",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\Main1.resx",
+              "RelativeToolTip": "Pokedex\\Main1.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-05-14T02:24:55.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "PokemonDAO.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonDAO.cs",
-              "RelativeDocumentMoniker": "Pokedex\\PokemonDAO.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonDAO.cs",
-              "RelativeToolTip": "Pokedex\\PokemonDAO.cs",
-              "ViewState": "AQIAAFgAAAAAAAAAAAAcwH0AAAAUAAAA",
+              "Title": "Main1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\Main1.Designer.cs",
+              "RelativeDocumentMoniker": "Pokedex\\Main1.Designer.cs",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\Main1.Designer.cs",
+              "RelativeToolTip": "Pokedex\\Main1.Designer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T19:53:25.504Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ClassPokemon.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\ClassPokemon.cs",
-              "RelativeDocumentMoniker": "Pokedex\\ClassPokemon.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\ClassPokemon.cs",
-              "RelativeToolTip": "Pokedex\\ClassPokemon.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAACAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T03:24:47.348Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "App.config",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\App.config",
-              "RelativeDocumentMoniker": "Pokedex\\App.config",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\App.config",
-              "RelativeToolTip": "Pokedex\\App.config",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAABMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2024-05-13T19:42:30.976Z"
+              "WhenOpened": "2024-05-14T02:13:03.438Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "VistaPokemon.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaPokemon.cs",
-              "RelativeDocumentMoniker": "Pokedex\\VistaPokemon.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaPokemon.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Pokedex\\VistaPokemon.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:25:23.89Z"
+              "Title": "Settings.settings",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\Properties\\Settings.settings",
+              "RelativeDocumentMoniker": "Pokedex\\Properties\\Settings.settings",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\Properties\\Settings.settings",
+              "RelativeToolTip": "Pokedex\\Properties\\Settings.settings",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
+              "WhenOpened": "2024-05-14T02:43:50.377Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "PokemonPanelNames.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanelNames.cs",
-              "RelativeDocumentMoniker": "Pokedex\\PokemonPanelNames.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanelNames.cs",
-              "RelativeToolTip": "Pokedex\\PokemonPanelNames.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAADkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T20:04:09.792Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "VistaPokemon.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaPokemon.cs",
-              "RelativeDocumentMoniker": "Pokedex\\VistaPokemon.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaPokemon.cs",
-              "RelativeToolTip": "Pokedex\\VistaPokemon.cs",
-              "ViewState": "AQIAAAgAAAAAAAAAAAAQwDcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T18:26:14.204Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "PokemonDetalle.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonDetalle.Designer.cs",
-              "RelativeDocumentMoniker": "Pokedex\\PokemonDetalle.Designer.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonDetalle.Designer.cs",
-              "RelativeToolTip": "Pokedex\\PokemonDetalle.Designer.cs",
-              "ViewState": "AQIAAPUBAAAAAAAAAAD4v4QCAAARAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T03:44:38.944Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "VistaObjeto - Copia.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaObjeto - Copia.cs",
-              "RelativeDocumentMoniker": "Pokedex\\VistaObjeto - Copia.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaObjeto - Copia.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Pokedex\\VistaObjeto - Copia.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T23:37:20.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Main1.resx",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Main1.resx",
-              "RelativeDocumentMoniker": "Pokedex\\Main1.resx",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Main1.resx",
-              "RelativeToolTip": "Pokedex\\Main1.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-05-14T02:24:55.514Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Program.cs",
-              "RelativeDocumentMoniker": "Pokedex\\Program.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Program.cs",
-              "RelativeToolTip": "Pokedex\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAANAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-12T17:02:17.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Main1.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Main1.cs",
-              "RelativeDocumentMoniker": "Pokedex\\Main1.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Main1.cs",
-              "RelativeToolTip": "Pokedex\\Main1.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAIBJwCsAAAAsAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T02:01:47.614Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Main1.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Main1.Designer.cs",
-              "RelativeDocumentMoniker": "Pokedex\\Main1.Designer.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Main1.Designer.cs",
-              "RelativeToolTip": "Pokedex\\Main1.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T02:13:03.438Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Main1.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Main1.cs",
-              "RelativeDocumentMoniker": "Pokedex\\Main1.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Main1.cs [Dise\u00F1o]",
-              "RelativeToolTip": "Pokedex\\Main1.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-14T02:01:38.697Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Settings.settings",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Properties\\Settings.settings",
-              "RelativeDocumentMoniker": "Pokedex\\Properties\\Settings.settings",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Properties\\Settings.settings",
-              "RelativeToolTip": "Pokedex\\Properties\\Settings.settings",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAlAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002767|",
-              "WhenOpened": "2024-05-14T02:43:50.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
               "Title": "PokemonPanel.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanel.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanel.cs",
               "RelativeDocumentMoniker": "Pokedex\\PokemonPanel.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanel.cs",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanel.cs",
               "RelativeToolTip": "Pokedex\\PokemonPanel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -350,11 +187,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 8,
               "Title": "AssemblyInfo.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Properties\\AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\Properties\\AssemblyInfo.cs",
               "RelativeDocumentMoniker": "Pokedex\\Properties\\AssemblyInfo.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\Properties\\AssemblyInfo.cs",
               "RelativeToolTip": "Pokedex\\Properties\\AssemblyInfo.cs",
               "ViewState": "AQIAAAgAAAAAAAAAAIBZwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -362,69 +199,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 9,
               "Title": "VistaRegion.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.cs",
               "RelativeDocumentMoniker": "Pokedex\\VistaRegion.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.cs [Dise\u00F1o]",
               "RelativeToolTip": "Pokedex\\VistaRegion.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T21:26:14.436Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 10,
               "Title": "VistaTipos.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaTipos.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaTipos.cs",
               "RelativeDocumentMoniker": "Pokedex\\VistaTipos.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaTipos.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaTipos.cs [Dise\u00F1o]",
               "RelativeToolTip": "Pokedex\\VistaTipos.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-13T22:49:57.042Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "VistaRegion.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.cs",
-              "RelativeDocumentMoniker": "Pokedex\\VistaRegion.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.cs",
-              "RelativeToolTip": "Pokedex\\VistaRegion.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAADwvxgAAABIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T21:26:18.767Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "VistaTipos.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaTipos.cs",
-              "RelativeDocumentMoniker": "Pokedex\\VistaTipos.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaTipos.cs",
-              "RelativeToolTip": "Pokedex\\VistaTipos.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAADgvykAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T22:49:05.399Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "PokemonPanelObjetos.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanelObjetos.cs",
-              "RelativeDocumentMoniker": "Pokedex\\PokemonPanelObjetos.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanelObjetos.cs",
-              "RelativeToolTip": "Pokedex\\PokemonPanelObjetos.cs",
-              "ViewState": "AQIAACEAAAAAAAAAAADwvzcAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-13T22:57:51.253Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 11,
               "Title": "PokemonPanelTipos.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanelTipos.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanelTipos.cs",
               "RelativeDocumentMoniker": "Pokedex\\PokemonPanelTipos.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanelTipos.cs",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanelTipos.cs",
               "RelativeToolTip": "Pokedex\\PokemonPanelTipos.cs",
               "ViewState": "AQIAAB0AAAAAAAAAAAAUwDQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -432,11 +233,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 12,
               "Title": "VistaTipos.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaTipos.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaTipos.Designer.cs",
               "RelativeDocumentMoniker": "Pokedex\\VistaTipos.Designer.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaTipos.Designer.cs",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaTipos.Designer.cs",
               "RelativeToolTip": "Pokedex\\VistaTipos.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -444,11 +245,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 14,
               "Title": "PokemonPanelRegion.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanelRegion.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanelRegion.cs",
               "RelativeDocumentMoniker": "Pokedex\\PokemonPanelRegion.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanelRegion.cs",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\PokemonPanelRegion.cs",
               "RelativeToolTip": "Pokedex\\PokemonPanelRegion.cs",
               "ViewState": "AQIAABAAAAAAAAAAAAAgwBsAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -456,11 +257,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 13,
               "Title": "VistaRegion.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.Designer.cs",
               "RelativeDocumentMoniker": "Pokedex\\VistaRegion.Designer.cs",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.Designer.cs",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.Designer.cs",
               "RelativeToolTip": "Pokedex\\VistaRegion.Designer.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAxwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -468,22 +269,22 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 15,
               "Title": "VistaRegion.resx",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.resx",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.resx",
               "RelativeDocumentMoniker": "Pokedex\\VistaRegion.resx",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.resx",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaRegion.resx",
               "RelativeToolTip": "Pokedex\\VistaRegion.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2024-05-13T21:26:06.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 16,
               "Title": "VistaPokemon.resx",
-              "DocumentMoniker": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaPokemon.resx",
+              "DocumentMoniker": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaPokemon.resx",
               "RelativeDocumentMoniker": "Pokedex\\VistaPokemon.resx",
-              "ToolTip": "C:\\Users\\hp\\POKEDEX\\Pokedex\\Pokedex\\VistaPokemon.resx",
+              "ToolTip": "C:\\Users\\ivani\\POKEDEX\\Pokedex\\Pokedex\\VistaPokemon.resx",
               "RelativeToolTip": "Pokedex\\VistaPokemon.resx",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
               "WhenOpened": "2024-05-13T19:43:09.881Z"
