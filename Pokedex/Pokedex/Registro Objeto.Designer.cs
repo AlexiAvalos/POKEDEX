@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Registro_Objeto));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -42,6 +42,11 @@
             this.descObj_lbl = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
             this.dataGridViewObj = new System.Windows.Forms.DataGridView();
+            this.idObj_txt = new System.Windows.Forms.TextBox();
+            this.idObj_lbl = new System.Windows.Forms.Label();
+            this.limpiarObj_btn = new Pokedex.RJButton();
+            this.eliminarObj_btn = new Pokedex.RJButton();
+            this.circularButton1 = new Pokedex.CircularButton();
             this.guardarObj_btn = new Pokedex.RJButton();
             this.n10_btn = new Pokedex.RJButton();
             this.n9_btn = new Pokedex.RJButton();
@@ -62,16 +67,11 @@
             this.down_btn = new Pokedex.RJButton();
             this.left_btn = new Pokedex.RJButton();
             this.up_btn = new Pokedex.RJButton();
-            this.circularButton1 = new Pokedex.CircularButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewObj)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -108,7 +108,7 @@
             // 
             this.nombreObj_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.nombreObj_txt.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nombreObj_txt.Location = new System.Drawing.Point(171, 196);
+            this.nombreObj_txt.Location = new System.Drawing.Point(171, 221);
             this.nombreObj_txt.Name = "nombreObj_txt";
             this.nombreObj_txt.Size = new System.Drawing.Size(156, 21);
             this.nombreObj_txt.TabIndex = 60;
@@ -120,7 +120,7 @@
             this.nombreObj_lbl.BackColor = System.Drawing.Color.Black;
             this.nombreObj_lbl.Font = new System.Drawing.Font("Showcard Gothic", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombreObj_lbl.ForeColor = System.Drawing.Color.Gold;
-            this.nombreObj_lbl.Location = new System.Drawing.Point(59, 195);
+            this.nombreObj_lbl.Location = new System.Drawing.Point(59, 220);
             this.nombreObj_lbl.Name = "nombreObj_lbl";
             this.nombreObj_lbl.Size = new System.Drawing.Size(70, 18);
             this.nombreObj_lbl.TabIndex = 59;
@@ -130,7 +130,7 @@
             // 
             this.descObj_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.descObj_txt.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descObj_txt.Location = new System.Drawing.Point(171, 235);
+            this.descObj_txt.Location = new System.Drawing.Point(171, 260);
             this.descObj_txt.Name = "descObj_txt";
             this.descObj_txt.Size = new System.Drawing.Size(156, 21);
             this.descObj_txt.TabIndex = 62;
@@ -141,7 +141,7 @@
             this.descObj_lbl.BackColor = System.Drawing.Color.Black;
             this.descObj_lbl.Font = new System.Drawing.Font("Showcard Gothic", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descObj_lbl.ForeColor = System.Drawing.Color.Gold;
-            this.descObj_lbl.Location = new System.Drawing.Point(59, 234);
+            this.descObj_lbl.Location = new System.Drawing.Point(59, 259);
             this.descObj_lbl.Name = "descObj_lbl";
             this.descObj_lbl.Size = new System.Drawing.Size(104, 18);
             this.descObj_lbl.TabIndex = 61;
@@ -161,45 +161,121 @@
             // dataGridViewObj
             // 
             this.dataGridViewObj.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Gold;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewObj.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewObj.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dataGridViewObj.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridViewObj.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridViewObj.DefaultCellStyle = dataGridViewCellStyle2;
             this.dataGridViewObj.GridColor = System.Drawing.SystemColors.ControlLightLight;
             this.dataGridViewObj.Location = new System.Drawing.Point(407, 131);
             this.dataGridViewObj.Name = "dataGridViewObj";
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.Red;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridViewObj.RowHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.Red;
-            this.dataGridViewObj.RowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.Red;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridViewObj.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.Red;
+            this.dataGridViewObj.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dataGridViewObj.RowTemplate.DefaultCellStyle.BackColor = System.Drawing.Color.White;
             this.dataGridViewObj.RowTemplate.DefaultCellStyle.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dataGridViewObj.RowTemplate.DefaultCellStyle.ForeColor = System.Drawing.Color.Black;
             this.dataGridViewObj.RowTemplate.DefaultCellStyle.SelectionBackColor = System.Drawing.Color.Red;
             this.dataGridViewObj.Size = new System.Drawing.Size(291, 173);
             this.dataGridViewObj.TabIndex = 66;
+            this.dataGridViewObj.SelectionChanged += new System.EventHandler(this.dataGridViewObj_SelectionChanged);
+            // 
+            // idObj_txt
+            // 
+            this.idObj_txt.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.idObj_txt.Font = new System.Drawing.Font("Showcard Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idObj_txt.Location = new System.Drawing.Point(171, 181);
+            this.idObj_txt.Name = "idObj_txt";
+            this.idObj_txt.Size = new System.Drawing.Size(156, 21);
+            this.idObj_txt.TabIndex = 69;
+            this.idObj_txt.TextChanged += new System.EventHandler(this.textBox1_TextChanged_1);
+            // 
+            // idObj_lbl
+            // 
+            this.idObj_lbl.AutoSize = true;
+            this.idObj_lbl.BackColor = System.Drawing.Color.Black;
+            this.idObj_lbl.Font = new System.Drawing.Font("Showcard Gothic", 10.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.idObj_lbl.ForeColor = System.Drawing.Color.Gold;
+            this.idObj_lbl.Location = new System.Drawing.Point(59, 180);
+            this.idObj_lbl.Name = "idObj_lbl";
+            this.idObj_lbl.Size = new System.Drawing.Size(29, 18);
+            this.idObj_lbl.TabIndex = 68;
+            this.idObj_lbl.Text = "ID:";
+            // 
+            // limpiarObj_btn
+            // 
+            this.limpiarObj_btn.BackColor = System.Drawing.Color.Gold;
+            this.limpiarObj_btn.BackgroundColor = System.Drawing.Color.Gold;
+            this.limpiarObj_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.limpiarObj_btn.BorderRadius = 10;
+            this.limpiarObj_btn.BorderSize = 0;
+            this.limpiarObj_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.limpiarObj_btn.Font = new System.Drawing.Font("Showcard Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.limpiarObj_btn.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.limpiarObj_btn.Location = new System.Drawing.Point(250, 305);
+            this.limpiarObj_btn.Name = "limpiarObj_btn";
+            this.limpiarObj_btn.Size = new System.Drawing.Size(88, 34);
+            this.limpiarObj_btn.TabIndex = 71;
+            this.limpiarObj_btn.Text = "Nuevo";
+            this.limpiarObj_btn.TextColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.limpiarObj_btn.UseVisualStyleBackColor = false;
+            this.limpiarObj_btn.Click += new System.EventHandler(this.limpiarObj_btn_Click);
+            // 
+            // eliminarObj_btn
+            // 
+            this.eliminarObj_btn.BackColor = System.Drawing.Color.Red;
+            this.eliminarObj_btn.BackgroundColor = System.Drawing.Color.Red;
+            this.eliminarObj_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.eliminarObj_btn.BorderRadius = 10;
+            this.eliminarObj_btn.BorderSize = 0;
+            this.eliminarObj_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.eliminarObj_btn.Font = new System.Drawing.Font("Showcard Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.eliminarObj_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.eliminarObj_btn.Location = new System.Drawing.Point(156, 305);
+            this.eliminarObj_btn.Name = "eliminarObj_btn";
+            this.eliminarObj_btn.Size = new System.Drawing.Size(88, 34);
+            this.eliminarObj_btn.TabIndex = 70;
+            this.eliminarObj_btn.Text = "Eliminar";
+            this.eliminarObj_btn.TextColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.eliminarObj_btn.UseVisualStyleBackColor = false;
+            this.eliminarObj_btn.Click += new System.EventHandler(this.eliminarObj_btn_Click);
+            // 
+            // circularButton1
+            // 
+            this.circularButton1.BackColor = System.Drawing.Color.Transparent;
+            this.circularButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularButton1.BackgroundImage")));
+            this.circularButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.circularButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.circularButton1.FlatAppearance.BorderSize = 0;
+            this.circularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circularButton1.Location = new System.Drawing.Point(179, 408);
+            this.circularButton1.Name = "circularButton1";
+            this.circularButton1.Size = new System.Drawing.Size(39, 40);
+            this.circularButton1.TabIndex = 67;
+            this.circularButton1.UseVisualStyleBackColor = false;
+            this.circularButton1.Click += new System.EventHandler(this.circularButton1_Click);
             // 
             // guardarObj_btn
             // 
@@ -211,9 +287,9 @@
             this.guardarObj_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.guardarObj_btn.Font = new System.Drawing.Font("Showcard Gothic", 9.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guardarObj_btn.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.guardarObj_btn.Location = new System.Drawing.Point(124, 302);
+            this.guardarObj_btn.Location = new System.Drawing.Point(62, 305);
             this.guardarObj_btn.Name = "guardarObj_btn";
-            this.guardarObj_btn.Size = new System.Drawing.Size(143, 34);
+            this.guardarObj_btn.Size = new System.Drawing.Size(88, 34);
             this.guardarObj_btn.TabIndex = 63;
             this.guardarObj_btn.Text = "Guardar";
             this.guardarObj_btn.TextColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -561,49 +637,15 @@
             this.up_btn.TextColor = System.Drawing.Color.White;
             this.up_btn.UseVisualStyleBackColor = false;
             // 
-            // circularButton1
-            // 
-            this.circularButton1.BackColor = System.Drawing.Color.Transparent;
-            this.circularButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularButton1.BackgroundImage")));
-            this.circularButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.circularButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.circularButton1.FlatAppearance.BorderSize = 0;
-            this.circularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.circularButton1.Location = new System.Drawing.Point(179, 408);
-            this.circularButton1.Name = "circularButton1";
-            this.circularButton1.Size = new System.Drawing.Size(39, 40);
-            this.circularButton1.TabIndex = 67;
-            this.circularButton1.UseVisualStyleBackColor = false;
-            this.circularButton1.Click += new System.EventHandler(this.circularButton1_Click);
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(397, 126);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(311, 184);
-            this.pictureBox2.TabIndex = 68;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox4.BackgroundImage = global::Pokedex.Properties.Resources.Pokeballs2;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(490, 172);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(136, 91);
-            this.pictureBox4.TabIndex = 69;
-            this.pictureBox4.TabStop = false;
-            // 
             // Registro_Objeto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 494);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.limpiarObj_btn);
+            this.Controls.Add(this.eliminarObj_btn);
+            this.Controls.Add(this.idObj_txt);
+            this.Controls.Add(this.idObj_lbl);
             this.Controls.Add(this.circularButton1);
             this.Controls.Add(this.dataGridViewObj);
             this.Controls.Add(this.pictureBox7);
@@ -643,8 +685,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewObj)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -682,7 +722,9 @@
         private System.Windows.Forms.PictureBox pictureBox7;
         private System.Windows.Forms.DataGridView dataGridViewObj;
         private CircularButton circularButton1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.TextBox idObj_txt;
+        private System.Windows.Forms.Label idObj_lbl;
+        private RJButton eliminarObj_btn;
+        private RJButton limpiarObj_btn;
     }
 }

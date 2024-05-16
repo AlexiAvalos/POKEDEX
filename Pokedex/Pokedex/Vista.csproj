@@ -74,6 +74,14 @@
     <Compile Include="ClassPokemon.cs" />
     <Compile Include="ObjetoDAL.cs" />
     <Compile Include="objetoR.cs" />
+    <Compile Include="RegionesCons.cs" />
+    <Compile Include="RegionesDAL.cs" />
+    <Compile Include="RegistroRegion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroRegion.Designer.cs">
+      <DependentUpon>RegistroRegion.cs</DependentUpon>
+    </Compile>
     <Compile Include="TipoDetalle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -186,6 +194,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Main1.resx">
       <DependentUpon>Main1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroRegion.resx">
+      <DependentUpon>RegistroRegion.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TipoDetalle.resx">
       <DependentUpon>TipoDetalle.cs</DependentUpon>
