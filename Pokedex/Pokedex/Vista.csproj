@@ -65,9 +65,36 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CircularButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ClassObjetos.cs" />
+    <Compile Include="ClassTipo.cs" />
+    <Compile Include="ClassRegiones.cs" />
     <Compile Include="ClassPokemon.cs" />
     <Compile Include="ObjetoDAL.cs" />
     <Compile Include="objetoR.cs" />
+    <Compile Include="TipoDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TipoDetalle.Designer.cs">
+      <DependentUpon>TipoDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TipoDAO.cs" />
+    <Compile Include="RegionesDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegionesDetalle.Designer.cs">
+      <DependentUpon>RegionesDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjetosDetalle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObjetosDetalle.Designer.cs">
+      <DependentUpon>ObjetosDetalle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjetoEvolutivoDAO.cs" />
+    <Compile Include="RegionesDAO.cs" />
     <Compile Include="PokemonPanelTipos.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -96,11 +123,11 @@
       <DependentUpon>Registro Objeto.cs</DependentUpon>
     </Compile>
     <Compile Include="RegistroObj.cs" />
-    <Compile Include="VistaObjeto - Copia.cs">
+    <Compile Include="VistaObjetos.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="VistaObjeto - Copia.Designer.cs">
-      <DependentUpon>VistaObjeto - Copia.cs</DependentUpon>
+    <Compile Include="VistaObjetos.Designer.cs">
+      <DependentUpon>VistaObjetos.cs</DependentUpon>
     </Compile>
     <Compile Include="VistaTipos.cs">
       <SubType>Form</SubType>
@@ -160,6 +187,18 @@
     <EmbeddedResource Include="Main1.resx">
       <DependentUpon>Main1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="TipoDetalle.resx">
+      <DependentUpon>TipoDetalle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegionesDetalle.resx">
+      <DependentUpon>RegionesDetalle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObjetosDetalle.resx">
+      <DependentUpon>ObjetosDetalle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="PokemonDetalle.resx">
       <DependentUpon>PokemonDetalle.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -167,8 +206,8 @@
     <EmbeddedResource Include="Registro Objeto.resx">
       <DependentUpon>Registro Objeto.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="VistaObjeto - Copia.resx">
-      <DependentUpon>VistaObjeto - Copia.cs</DependentUpon>
+    <EmbeddedResource Include="VistaObjetos.resx">
+      <DependentUpon>VistaObjetos.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="VistaTipos.resx">
@@ -219,6 +258,237 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Objetos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bayleef.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blastoise.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bulbasaur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Caterpie.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Charizard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Charmander.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Charmeleon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chesnaught.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chespin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chikorita.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Chimchar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Combusken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cyndaquil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dartrix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grotle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Grovyle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Ivysaur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Meganium.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Monferno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pikachu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Quilava.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rowlet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sceptile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Serperior.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Servine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Snivy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Squirtle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Torchic.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Torterra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Treecko.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Turtwig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Venusaur.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Victini.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Wartortle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondodetalle1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Acero.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Agua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bicho.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Dragón.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Eléctrico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fantasma.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fuego.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hada.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hielo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Lucha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Planta.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Psíquico.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Roca.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Siniestro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tierra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Veneno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volador.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fondodetalle2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondodetalle3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondodetalle31.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondodetalle32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piedra Agua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piedra Alba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piedra Día.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piedra Fuego.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piedra Hoja.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piedra Lunar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piedra Solar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piedra Trueno.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piedra Hielo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Piedra Noche.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fondodetalle4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Alola.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Galar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hoenn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Johto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kalos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kanto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Sinnoh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Teselia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OIP.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,9 +1,10 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Pokedex
 {
-    public class PokemonPanelRegion : Panel
+    public class PokemonPanelRegiones : Panel
     {
         private string _nombreRegion;
 
@@ -13,42 +14,51 @@ namespace Pokedex
             set
             {
                 _nombreRegion = value;
-                Invalidate(); // Invalidar el control para redibujar
+                Invalidate();
             }
         }
+
+        public event EventHandler RegionSeleccionada;
 
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
 
-            // Dibujar el nombre de la región en el panel
+           
             using (var brush = new SolidBrush(Color.Black))
             {
-                // Ajustar la posición de dibujado a la izquierda
                 var x = 5;
-                var y = (Height - (int)e.Graphics.MeasureString(_nombreRegion, Font).Height) / 2; // Centrar verticalmente
+                var y = (Height - (int)e.Graphics.MeasureString(_nombreRegion, Font).Height) / 2; 
                 e.Graphics.DrawString(_nombreRegion, Font, brush, new Point(x, y));
             }
         }
 
-        public PokemonPanelRegion()
+        public PokemonPanelRegiones()
         {
-            // Establecer el tamaño del panel
+            
             Size = new Size(112, 41);
 
-            // Establecer la imagen de fondo del panel
-            BackgroundImage = Properties.Resources.panel; // Asegúrate de que 'panel' sea el nombre correcto de tu imagen en los recursos
+           
+            BackgroundImage = Properties.Resources.panel;
             BackgroundImageLayout = ImageLayout.Stretch;
 
-            // Hacer el fondo del panel transparente
+            
             BackColor = Color.Transparent;
 
-            // Establecer el color de fondo del panel
+           
             BackColor = Color.White;
 
-            // Establecer la fuente y el tamaño del texto
-            Font = new Font("Segoe UI Emoji", 10, FontStyle.Regular);
+
+            Font = new Font("Rockwell Condensed", 11.25f, FontStyle.Bold);
+
+
+            Click += PokemonPanelRegiones_Click;
+        }
+
+        private void PokemonPanelRegiones_Click(object sender, EventArgs e)
+        {
+            
+            RegionSeleccionada?.Invoke(this, e);
         }
     }
 }
-

@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main1));
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
+            this.circularButton1 = new Pokedex.CircularButton();
             this.pokemonPanel4 = new Pokedex.PokemonPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.pokemonPanel3 = new Pokedex.PokemonPanel();
@@ -52,7 +53,6 @@
             this.n3_btn = new Pokedex.RJButton();
             this.n2_btn = new Pokedex.RJButton();
             this.n1_btn = new Pokedex.RJButton();
-            this.power_btn = new Pokedex.RJButton();
             this.A_btn = new Pokedex.RJButton();
             this.B_btn = new Pokedex.RJButton();
             this.Y_btn = new Pokedex.RJButton();
@@ -61,20 +61,40 @@
             this.down_btn = new Pokedex.RJButton();
             this.left_btn = new Pokedex.RJButton();
             this.up_btn = new Pokedex.RJButton();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.pokemonPanel4.SuspendLayout();
             this.pokemonPanel3.SuspendLayout();
             this.pokemonPanel2.SuspendLayout();
             this.pokemonPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox5.BackgroundImage = global::Pokedex.Properties.Resources.R;
+            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.pictureBox5.Location = new System.Drawing.Point(64, 135);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(273, 86);
+            this.pictureBox5.TabIndex = 33;
+            this.pictureBox5.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.pictureBox2.Location = new System.Drawing.Point(50, 101);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(298, 256);
+            this.pictureBox2.TabIndex = 32;
+            this.pictureBox2.TabStop = false;
+            // 
             // pictureBox4
             // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox4.BackgroundImage = global::Pokedex.Properties.Resources.Pokeballs2;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox4.Location = new System.Drawing.Point(490, 172);
@@ -85,16 +105,17 @@
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(396, 125);
+            this.pictureBox3.Location = new System.Drawing.Point(397, 126);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(310, 185);
+            this.pictureBox3.Size = new System.Drawing.Size(311, 184);
             this.pictureBox3.TabIndex = 30;
             this.pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::Pokedex.Properties.Resources.pkdxfinal;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
@@ -104,28 +125,25 @@
             this.pictureBox1.TabStop = false;
             this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // pictureBox2
+            // circularButton1
             // 
-            this.pictureBox2.Location = new System.Drawing.Point(50, 107);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(298, 250);
-            this.pictureBox2.TabIndex = 32;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.BackgroundImage = global::Pokedex.Properties.Resources.R;
-            this.pictureBox5.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox5.Location = new System.Drawing.Point(64, 135);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(273, 86);
-            this.pictureBox5.TabIndex = 33;
-            this.pictureBox5.TabStop = false;
+            this.circularButton1.BackColor = System.Drawing.Color.Transparent;
+            this.circularButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularButton1.BackgroundImage")));
+            this.circularButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.circularButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.circularButton1.FlatAppearance.BorderSize = 0;
+            this.circularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circularButton1.Location = new System.Drawing.Point(179, 408);
+            this.circularButton1.Name = "circularButton1";
+            this.circularButton1.Size = new System.Drawing.Size(39, 40);
+            this.circularButton1.TabIndex = 36;
+            this.circularButton1.UseVisualStyleBackColor = false;
+            this.circularButton1.Click += new System.EventHandler(this.circularButton1_Click);
             // 
             // pokemonPanel4
             // 
             this.pokemonPanel4.AllowDrop = true;
-            this.pokemonPanel4.BackColor = System.Drawing.Color.Transparent;
+            this.pokemonPanel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pokemonPanel4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel4.BackgroundImage")));
             this.pokemonPanel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pokemonPanel4.Controls.Add(this.label4);
@@ -137,18 +155,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Rockwell Condensed", 11.25F, System.Drawing.FontStyle.Bold);
             this.label4.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.label4.Location = new System.Drawing.Point(20, 9);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 15);
+            this.label4.Size = new System.Drawing.Size(40, 18);
             this.label4.TabIndex = 3;
             this.label4.Text = "Tipos";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // pokemonPanel3
             // 
-            this.pokemonPanel3.BackColor = System.Drawing.Color.Transparent;
+            this.pokemonPanel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pokemonPanel3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel3.BackgroundImage")));
             this.pokemonPanel3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pokemonPanel3.Controls.Add(this.label3);
@@ -160,17 +178,17 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Rockwell Condensed", 11.25F, System.Drawing.FontStyle.Bold);
             this.label3.Location = new System.Drawing.Point(14, 8);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(55, 15);
+            this.label3.Size = new System.Drawing.Size(50, 18);
             this.label3.TabIndex = 2;
             this.label3.Text = "Objetos";
             this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // pokemonPanel2
             // 
-            this.pokemonPanel2.BackColor = System.Drawing.Color.Transparent;
+            this.pokemonPanel2.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pokemonPanel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel2.BackgroundImage")));
             this.pokemonPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pokemonPanel2.Controls.Add(this.label2);
@@ -182,17 +200,17 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Rockwell Condensed", 11.25F, System.Drawing.FontStyle.Bold);
             this.label2.Location = new System.Drawing.Point(17, 10);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(63, 15);
+            this.label2.Size = new System.Drawing.Size(60, 18);
             this.label2.TabIndex = 1;
             this.label2.Text = "Regiones";
             this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // pokemonPanel1
             // 
-            this.pokemonPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.pokemonPanel1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.pokemonPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pokemonPanel1.BackgroundImage")));
             this.pokemonPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.pokemonPanel1.Controls.Add(this.label1);
@@ -204,10 +222,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Emoji", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Rockwell Condensed", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(14, 10);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 15);
+            this.label1.Size = new System.Drawing.Size(74, 18);
             this.label1.TabIndex = 0;
             this.label1.Text = "Pokemones";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -393,27 +411,11 @@
             this.n1_btn.TextColor = System.Drawing.Color.Teal;
             this.n1_btn.UseVisualStyleBackColor = false;
             // 
-            // power_btn
-            // 
-            this.power_btn.BackColor = System.Drawing.SystemColors.Control;
-            this.power_btn.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.power_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.power_btn.BorderRadius = 10;
-            this.power_btn.BorderSize = 0;
-            this.power_btn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.power_btn.Location = new System.Drawing.Point(186, 416);
-            this.power_btn.Name = "power_btn";
-            this.power_btn.Size = new System.Drawing.Size(25, 23);
-            this.power_btn.TabIndex = 18;
-            this.power_btn.Text = "-";
-            this.power_btn.TextColor = System.Drawing.SystemColors.ControlText;
-            this.power_btn.UseVisualStyleBackColor = true;
-            // 
             // A_btn
             // 
             this.A_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.A_btn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.A_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.A_btn.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
             this.A_btn.BorderRadius = 20;
             this.A_btn.BorderSize = 0;
             this.A_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -431,7 +433,7 @@
             // 
             this.B_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.B_btn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.B_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.B_btn.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
             this.B_btn.BorderRadius = 20;
             this.B_btn.BorderSize = 0;
             this.B_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -449,7 +451,7 @@
             // 
             this.Y_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.Y_btn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.Y_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.Y_btn.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
             this.Y_btn.BorderRadius = 20;
             this.Y_btn.BorderSize = 0;
             this.Y_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -467,7 +469,7 @@
             // 
             this.X_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.X_btn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.X_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.X_btn.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
             this.X_btn.BorderRadius = 20;
             this.X_btn.BorderSize = 0;
             this.X_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -485,7 +487,7 @@
             // 
             this.right_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.right_btn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.right_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.right_btn.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
             this.right_btn.BorderRadius = 20;
             this.right_btn.BorderSize = 0;
             this.right_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -503,7 +505,7 @@
             // 
             this.down_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.down_btn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.down_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.down_btn.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
             this.down_btn.BorderRadius = 20;
             this.down_btn.BorderSize = 0;
             this.down_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -521,7 +523,7 @@
             // 
             this.left_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.left_btn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.left_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.left_btn.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
             this.left_btn.BorderRadius = 20;
             this.left_btn.BorderSize = 0;
             this.left_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -539,7 +541,7 @@
             // 
             this.up_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
             this.up_btn.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
-            this.up_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.up_btn.BorderColor = System.Drawing.SystemColors.ButtonHighlight;
             this.up_btn.BorderRadius = 20;
             this.up_btn.BorderSize = 0;
             this.up_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -558,6 +560,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 494);
+            this.Controls.Add(this.circularButton1);
             this.Controls.Add(this.pokemonPanel4);
             this.Controls.Add(this.pokemonPanel3);
             this.Controls.Add(this.pokemonPanel2);
@@ -576,7 +579,6 @@
             this.Controls.Add(this.n3_btn);
             this.Controls.Add(this.n2_btn);
             this.Controls.Add(this.n1_btn);
-            this.Controls.Add(this.power_btn);
             this.Controls.Add(this.A_btn);
             this.Controls.Add(this.B_btn);
             this.Controls.Add(this.Y_btn);
@@ -586,14 +588,15 @@
             this.Controls.Add(this.left_btn);
             this.Controls.Add(this.up_btn);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Main1";
             this.Text = " ";
             this.Load += new System.EventHandler(this.Main1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.pokemonPanel4.ResumeLayout(false);
             this.pokemonPanel4.PerformLayout();
             this.pokemonPanel3.ResumeLayout(false);
@@ -617,7 +620,6 @@
         private RJButton B_btn;
         private RJButton Y_btn;
         private RJButton X_btn;
-        private RJButton power_btn;
         private RJButton n1_btn;
         private RJButton n2_btn;
         private RJButton n3_btn;
@@ -640,5 +642,6 @@
         private System.Windows.Forms.Label label3;
         private PokemonPanel pokemonPanel4;
         private System.Windows.Forms.Label label4;
+        private CircularButton circularButton1;
     }
 }

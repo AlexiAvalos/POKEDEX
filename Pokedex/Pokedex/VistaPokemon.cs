@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Pokedex
@@ -11,7 +12,11 @@ namespace Pokedex
         public VistaPokemon()
         {
             InitializeComponent();
-            string connectionString = "Data Source=DESKTOP-UBBP1OB\\NICO;Initial Catalog=PokeWiki;Integrated Security=True";
+            //Background Invisible No Tocar
+            this.TransparencyKey = Color.Magenta;
+            this.BackColor = Color.Magenta;
+            this.StartPosition = FormStartPosition.CenterScreen;
+            string connectionString = "Data Source=DESKTOP-J97KSH3;Initial Catalog=PokeWiki;Integrated Security=True";
             pokemonDAO = new PokemonDAO(connectionString);
             MostrarPokemones();
         }
@@ -27,18 +32,19 @@ namespace Pokedex
                 pokemonPanel.Margin = new Padding(10);
                 flowLayoutPanel1.Controls.Add(pokemonPanel);
 
-                // Suscribirse al evento de clic de cada panel
+               
                 pokemonPanel.Click += (sender, e) =>
                 {
                     PokemonPanelNames panel = (PokemonPanelNames)sender;
                     string nombre = panel.NombrePokemon;
 
-                    // Obtener el objeto Pokemon correspondiente al nombre
+                   
                     Pokemon pokemon = pokemonDAO.ObtenerPokemonPorNombre(nombre);
 
-                    // Mostrar los detalles del Pokémon seleccionado
+                   
                     PokemonDetalle pokemonDetalleForm = new PokemonDetalle(pokemon);
                     pokemonDetalleForm.Show();
+                    this.Hide();
                 };
             }
         }
@@ -53,6 +59,18 @@ namespace Pokedex
         private void pictureBox1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void B_btn_Click(object sender, EventArgs e)
+        {
+            Main1 main = new Main1();
+            main.Show();
+            this.Close();
+        }
+
+        private void circularButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VistaRegion));
             this.n10_btn = new Pokedex.RJButton();
             this.n9_btn = new Pokedex.RJButton();
             this.n8_btn = new Pokedex.RJButton();
@@ -38,7 +39,6 @@
             this.n3_btn = new Pokedex.RJButton();
             this.n2_btn = new Pokedex.RJButton();
             this.n1_btn = new Pokedex.RJButton();
-            this.power_btn = new Pokedex.RJButton();
             this.A_btn = new Pokedex.RJButton();
             this.B_btn = new Pokedex.RJButton();
             this.Y_btn = new Pokedex.RJButton();
@@ -52,6 +52,7 @@
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.circularButton1 = new Pokedex.CircularButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -129,7 +130,6 @@
             this.n7_btn.Text = "7";
             this.n7_btn.TextColor = System.Drawing.Color.Teal;
             this.n7_btn.UseVisualStyleBackColor = false;
-            this.n7_btn.Click += new System.EventHandler(this.rjButton8_Click);
             // 
             // n6_btn
             // 
@@ -239,22 +239,6 @@
             this.n1_btn.TextColor = System.Drawing.Color.Teal;
             this.n1_btn.UseVisualStyleBackColor = false;
             // 
-            // power_btn
-            // 
-            this.power_btn.BackColor = System.Drawing.SystemColors.Control;
-            this.power_btn.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.power_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.power_btn.BorderRadius = 10;
-            this.power_btn.BorderSize = 0;
-            this.power_btn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.power_btn.Location = new System.Drawing.Point(186, 416);
-            this.power_btn.Name = "power_btn";
-            this.power_btn.Size = new System.Drawing.Size(25, 23);
-            this.power_btn.TabIndex = 18;
-            this.power_btn.Text = "-";
-            this.power_btn.TextColor = System.Drawing.SystemColors.ControlText;
-            this.power_btn.UseVisualStyleBackColor = true;
-            // 
             // A_btn
             // 
             this.A_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -290,6 +274,7 @@
             this.B_btn.Text = "B";
             this.B_btn.TextColor = System.Drawing.Color.White;
             this.B_btn.UseVisualStyleBackColor = false;
+            this.B_btn.Click += new System.EventHandler(this.B_btn_Click);
             // 
             // Y_btn
             // 
@@ -452,13 +437,28 @@
             this.pictureBox1.Size = new System.Drawing.Size(756, 495);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // circularButton1
+            // 
+            this.circularButton1.BackColor = System.Drawing.Color.Transparent;
+            this.circularButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularButton1.BackgroundImage")));
+            this.circularButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.circularButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.circularButton1.FlatAppearance.BorderSize = 0;
+            this.circularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circularButton1.Location = new System.Drawing.Point(179, 408);
+            this.circularButton1.Name = "circularButton1";
+            this.circularButton1.Size = new System.Drawing.Size(39, 40);
+            this.circularButton1.TabIndex = 71;
+            this.circularButton1.UseVisualStyleBackColor = false;
+            this.circularButton1.Click += new System.EventHandler(this.circularButton1_Click);
             // 
             // VistaRegion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 494);
+            this.Controls.Add(this.circularButton1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox3);
@@ -473,7 +473,6 @@
             this.Controls.Add(this.n3_btn);
             this.Controls.Add(this.n2_btn);
             this.Controls.Add(this.n1_btn);
-            this.Controls.Add(this.power_btn);
             this.Controls.Add(this.A_btn);
             this.Controls.Add(this.B_btn);
             this.Controls.Add(this.Y_btn);
@@ -483,6 +482,7 @@
             this.Controls.Add(this.left_btn);
             this.Controls.Add(this.up_btn);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VistaRegion";
             this.Text = "Main1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
@@ -504,7 +504,6 @@
         private RJButton B_btn;
         private RJButton Y_btn;
         private RJButton X_btn;
-        private RJButton power_btn;
         private RJButton n1_btn;
         private RJButton n2_btn;
         private RJButton n3_btn;
@@ -519,5 +518,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private CircularButton circularButton1;
     }
 }

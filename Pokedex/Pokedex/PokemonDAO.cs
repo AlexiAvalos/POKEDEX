@@ -55,7 +55,7 @@ public class PokemonDAO
     {
         List<string> nombresObjetosEvolutivos = new List<string>();
 
-        string query = "SELECT Nombre FROM Objectos_Evolutivos"; // Ajusta la consulta según la estructura de tu base de datos
+        string query = "SELECT Nombre FROM Objectos_Evolutivos"; 
 
         using (SqlConnection connection = new SqlConnection(connectionString))
         {
@@ -159,6 +159,9 @@ public class PokemonDAO
 
         return tipos;
     }
+
+   
+  
 
 
 

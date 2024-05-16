@@ -11,7 +11,7 @@ namespace Pokedex
     {
         public static SqlConnection RealizarConexion()
         {
-            SqlConnection conn = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=PokeWiki;Data Source=DESKTOP-UBBP1OB\\NICO");
+            SqlConnection conn = new SqlConnection("Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=PokeWiki;Data Source=DESKTOP-J97KSH3");
             conn.Open();
             return conn;
         }

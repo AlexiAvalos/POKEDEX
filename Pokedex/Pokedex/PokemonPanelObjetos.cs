@@ -1,9 +1,10 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Pokedex
 {
-    public class ObjetoEvolutivoPanel : Panel
+    public class PokemonPanelObjetos : Panel
     {
         private string _nombreObjetoEvolutivo;
 
@@ -13,43 +14,52 @@ namespace Pokedex
             set
             {
                 _nombreObjetoEvolutivo = value;
-                Invalidate(); // Invalidar el control para redibujar
+                Invalidate(); 
             }
         }
+
+        public event EventHandler ObjetoEvolutivoSeleccionado;
 
         protected override void OnPaint(PaintEventArgs e)
         {
             base.OnPaint(e);
 
-            // Dibujar el nombre del objeto evolutivo en el panel
+           
             using (var brush = new SolidBrush(Color.Black))
             {
                 var x = 5;
-                var y = (Height - (int)e.Graphics.MeasureString(_nombreObjetoEvolutivo, Font).Height) / 2; // Centrar verticalmente
+                var y = (Height - (int)e.Graphics.MeasureString(_nombreObjetoEvolutivo, Font).Height) / 2; 
                 e.Graphics.DrawString(_nombreObjetoEvolutivo, Font, brush, new Point(x, y));
             }
         }
 
-        public ObjetoEvolutivoPanel()
+        public PokemonPanelObjetos()
         {
-            // Establecer el tamaño del panel
+            
             Size = new Size(112, 41);
 
-            // Establecer la imagen de fondo del panel
-            BackgroundImage = Properties.Resources.panel; // Asegúrate de que 'panel' sea el nombre correcto de tu imagen en los recursos
+           
+            BackgroundImage = Properties.Resources.panel; 
             BackgroundImageLayout = ImageLayout.Stretch;
 
-            // Hacer el fondo del panel transparente
+           
             BackColor = Color.Transparent;
 
-            // Establecer el color de fondo del panel
+            
             BackColor = Color.White;
 
-            // Establecer la fuente y el tamaño del texto
-            Font = new Font("Segoe UI Emoji", 10, FontStyle.Regular);
+
+            Font = new Font("Rockwell Condensed", 11.25f, FontStyle.Bold);
+
+
+
+            Click += PokemonPanelObjetos_Click;
+        }
+
+        private void PokemonPanelObjetos_Click(object sender, EventArgs e)
+        {
+            
+            ObjetoEvolutivoSeleccionado?.Invoke(this, e);
         }
     }
 }
-
-
-

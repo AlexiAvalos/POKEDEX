@@ -62,6 +62,7 @@ namespace Pokedex
             this.up_btn = new Pokedex.RJButton();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.circularButton1 = new Pokedex.CircularButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -332,6 +333,7 @@ namespace Pokedex
             this.B_btn.Text = "B";
             this.B_btn.TextColor = System.Drawing.Color.White;
             this.B_btn.UseVisualStyleBackColor = false;
+            this.B_btn.Click += new System.EventHandler(this.B_btn_Click);
             // 
             // Y_btn
             // 
@@ -463,11 +465,27 @@ namespace Pokedex
             this.pictureBox4.TabIndex = 30;
             this.pictureBox4.TabStop = false;
             // 
+            // circularButton1
+            // 
+            this.circularButton1.BackColor = System.Drawing.Color.Transparent;
+            this.circularButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularButton1.BackgroundImage")));
+            this.circularButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.circularButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.circularButton1.FlatAppearance.BorderSize = 0;
+            this.circularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circularButton1.Location = new System.Drawing.Point(179, 408);
+            this.circularButton1.Name = "circularButton1";
+            this.circularButton1.Size = new System.Drawing.Size(39, 40);
+            this.circularButton1.TabIndex = 70;
+            this.circularButton1.UseVisualStyleBackColor = false;
+            this.circularButton1.Click += new System.EventHandler(this.circularButton1_Click);
+            // 
             // VistaPokemon
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 494);
+            this.Controls.Add(this.circularButton1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.pictureBox2);
@@ -492,6 +510,7 @@ namespace Pokedex
             this.Controls.Add(this.up_btn);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "VistaPokemon";
             this.Text = "Main1";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -528,5 +547,6 @@ namespace Pokedex
         private FlowLayoutPanel flowLayoutPanel1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox4;
+        private CircularButton circularButton1;
     }
 }

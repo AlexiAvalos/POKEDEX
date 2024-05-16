@@ -18,8 +18,9 @@
     public string Tipo { get; set; }
     public int Generacion { get; set; }
     public string Habitat { get; set; }
-    public string Categoria { get; set; } // Agrega la propiedad Categoria
+    public string Categoria { get; set; } 
 
     public string NombreCategoria { get; set; }
+    public string NombreImagen { get; set; }
 }
 

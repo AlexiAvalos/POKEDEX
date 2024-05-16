@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Drawing;
 
 namespace Pokedex
 {
@@ -9,6 +10,11 @@ namespace Pokedex
         public Main1()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.TransparencyKey = Color.Magenta;
+
+          
+            this.BackColor = Color.Magenta;
 
         }
 
@@ -48,7 +54,7 @@ namespace Pokedex
 
         private void label4_Click(object sender, EventArgs e)
         {
-            VistaTipo vistaTipo = new VistaTipo();
+            VistaTipos vistaTipo = new VistaTipos();
             vistaTipo.Show();
             this.Hide();
         }
@@ -56,6 +62,11 @@ namespace Pokedex
         private void Main1_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void circularButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

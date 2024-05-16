@@ -1,6 +1,6 @@
 ﻿namespace Pokedex
 {
-    partial class VistaObjetos
+    partial class ObjetosDetalle
     {
         /// <summary>
         /// Required designer variable.
@@ -28,6 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ObjetosDetalle));
+            this.panelDescripcion2 = new System.Windows.Forms.Panel();
+            this.lblDescripcion = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.pictureBoxImagen = new System.Windows.Forms.PictureBox();
             this.n10_btn = new Pokedex.RJButton();
             this.n9_btn = new Pokedex.RJButton();
             this.n8_btn = new Pokedex.RJButton();
@@ -38,7 +43,6 @@
             this.n3_btn = new Pokedex.RJButton();
             this.n2_btn = new Pokedex.RJButton();
             this.n1_btn = new Pokedex.RJButton();
-            this.power_btn = new Pokedex.RJButton();
             this.A_btn = new Pokedex.RJButton();
             this.B_btn = new Pokedex.RJButton();
             this.Y_btn = new Pokedex.RJButton();
@@ -47,17 +51,57 @@
             this.down_btn = new Pokedex.RJButton();
             this.left_btn = new Pokedex.RJButton();
             this.up_btn = new Pokedex.RJButton();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.registroObj_btn = new Pokedex.RJButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            this.circularButton1 = new Pokedex.CircularButton();
+            this.panelDescripcion2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagen)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
+            // 
+            // panelDescripcion2
+            // 
+            this.panelDescripcion2.BackgroundImage = global::Pokedex.Properties.Resources.fondodetalle1;
+            this.panelDescripcion2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.panelDescripcion2.Controls.Add(this.lblDescripcion);
+            this.panelDescripcion2.Controls.Add(this.lblNombre);
+            this.panelDescripcion2.Location = new System.Drawing.Point(402, 128);
+            this.panelDescripcion2.Name = "panelDescripcion2";
+            this.panelDescripcion2.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.panelDescripcion2.Size = new System.Drawing.Size(302, 180);
+            this.panelDescripcion2.TabIndex = 16;
+            // 
+            // lblDescripcion
+            // 
+            this.lblDescripcion.BackColor = System.Drawing.Color.Transparent;
+            this.lblDescripcion.Font = new System.Drawing.Font("Rockwell Condensed", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDescripcion.Location = new System.Drawing.Point(62, 46);
+            this.lblDescripcion.Name = "lblDescripcion";
+            this.lblDescripcion.Size = new System.Drawing.Size(178, 89);
+            this.lblDescripcion.TabIndex = 12;
+            this.lblDescripcion.Text = "label11";
+            this.lblDescripcion.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.BackColor = System.Drawing.Color.Transparent;
+            this.lblNombre.Font = new System.Drawing.Font("Showcard Gothic", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(0, 0);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(302, 29);
+            this.lblNombre.TabIndex = 11;
+            this.lblNombre.Text = "Descripcion";
+            this.lblNombre.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pictureBoxImagen
+            // 
+            this.pictureBoxImagen.BackColor = System.Drawing.Color.Cornsilk;
+            this.pictureBoxImagen.BackgroundImage = global::Pokedex.Properties.Resources.fondodetalle1;
+            this.pictureBoxImagen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBoxImagen.Location = new System.Drawing.Point(50, 105);
+            this.pictureBoxImagen.Name = "pictureBoxImagen";
+            this.pictureBoxImagen.Size = new System.Drawing.Size(298, 254);
+            this.pictureBoxImagen.TabIndex = 30;
+            this.pictureBoxImagen.TabStop = false;
             // 
             // n10_btn
             // 
@@ -130,7 +174,6 @@
             this.n7_btn.Text = "7";
             this.n7_btn.TextColor = System.Drawing.Color.Teal;
             this.n7_btn.UseVisualStyleBackColor = false;
-            this.n7_btn.Click += new System.EventHandler(this.rjButton8_Click);
             // 
             // n6_btn
             // 
@@ -240,22 +283,6 @@
             this.n1_btn.TextColor = System.Drawing.Color.Teal;
             this.n1_btn.UseVisualStyleBackColor = false;
             // 
-            // power_btn
-            // 
-            this.power_btn.BackColor = System.Drawing.SystemColors.Control;
-            this.power_btn.BackgroundColor = System.Drawing.SystemColors.Control;
-            this.power_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.power_btn.BorderRadius = 10;
-            this.power_btn.BorderSize = 0;
-            this.power_btn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.power_btn.Location = new System.Drawing.Point(186, 416);
-            this.power_btn.Name = "power_btn";
-            this.power_btn.Size = new System.Drawing.Size(25, 23);
-            this.power_btn.TabIndex = 18;
-            this.power_btn.Text = "-";
-            this.power_btn.TextColor = System.Drawing.SystemColors.ControlText;
-            this.power_btn.UseVisualStyleBackColor = true;
-            // 
             // A_btn
             // 
             this.A_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(50)))), ((int)(((byte)(50)))));
@@ -291,6 +318,7 @@
             this.B_btn.Text = "B";
             this.B_btn.TextColor = System.Drawing.Color.White;
             this.B_btn.UseVisualStyleBackColor = false;
+            this.B_btn.Click += new System.EventHandler(this.B_btn_Click);
             // 
             // Y_btn
             // 
@@ -400,50 +428,6 @@
             this.up_btn.TextColor = System.Drawing.Color.White;
             this.up_btn.UseVisualStyleBackColor = false;
             // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.AutoScroll = true;
-            this.flowLayoutPanel1.AutoScrollMargin = new System.Drawing.Size(0, 250);
-            this.flowLayoutPanel1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.flowLayoutPanel1.BackgroundImage = global::Pokedex.Properties.Resources.Menu_Background;
-            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(50, 106);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(298, 251);
-            this.flowLayoutPanel1.TabIndex = 29;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox4.BackgroundImage = global::Pokedex.Properties.Resources.Pokeballs2;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(500, 141);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(100, 50);
-            this.pictureBox4.TabIndex = 31;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox2.BackgroundImage = global::Pokedex.Properties.Resources.Objetos;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(431, 187);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(242, 82);
-            this.pictureBox2.TabIndex = 32;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(397, 125);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(310, 184);
-            this.pictureBox3.TabIndex = 30;
-            this.pictureBox3.TabStop = false;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImage = global::Pokedex.Properties.Resources.pkdxfinal;
@@ -453,38 +437,30 @@
             this.pictureBox1.Size = new System.Drawing.Size(756, 495);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
-            // registroObj_btn
+            // circularButton1
             // 
-            this.registroObj_btn.BackColor = System.Drawing.Color.Gold;
-            this.registroObj_btn.BackgroundColor = System.Drawing.Color.Gold;
-            this.registroObj_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.registroObj_btn.BorderRadius = 10;
-            this.registroObj_btn.BorderSize = 0;
-            this.registroObj_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
-            this.registroObj_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.registroObj_btn.Font = new System.Drawing.Font("Showcard Gothic", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.registroObj_btn.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.registroObj_btn.Location = new System.Drawing.Point(497, 275);
-            this.registroObj_btn.Name = "registroObj_btn";
-            this.registroObj_btn.Size = new System.Drawing.Size(110, 34);
-            this.registroObj_btn.TabIndex = 33;
-            this.registroObj_btn.Text = "Registro";
-            this.registroObj_btn.TextColor = System.Drawing.SystemColors.ControlText;
-            this.registroObj_btn.UseVisualStyleBackColor = false;
-            this.registroObj_btn.Click += new System.EventHandler(this.registroObj_btn_Click);
+            this.circularButton1.BackColor = System.Drawing.Color.Transparent;
+            this.circularButton1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("circularButton1.BackgroundImage")));
+            this.circularButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.circularButton1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.circularButton1.FlatAppearance.BorderSize = 0;
+            this.circularButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.circularButton1.Location = new System.Drawing.Point(179, 408);
+            this.circularButton1.Name = "circularButton1";
+            this.circularButton1.Size = new System.Drawing.Size(39, 40);
+            this.circularButton1.TabIndex = 37;
+            this.circularButton1.UseVisualStyleBackColor = false;
+            this.circularButton1.Click += new System.EventHandler(this.circularButton1_Click);
             // 
-            // VistaObjetos
+            // ObjetosDetalle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 494);
-            this.Controls.Add(this.registroObj_btn);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.circularButton1);
+            this.Controls.Add(this.panelDescripcion2);
+            this.Controls.Add(this.pictureBoxImagen);
             this.Controls.Add(this.n10_btn);
             this.Controls.Add(this.n9_btn);
             this.Controls.Add(this.n8_btn);
@@ -495,7 +471,6 @@
             this.Controls.Add(this.n3_btn);
             this.Controls.Add(this.n2_btn);
             this.Controls.Add(this.n1_btn);
-            this.Controls.Add(this.power_btn);
             this.Controls.Add(this.A_btn);
             this.Controls.Add(this.B_btn);
             this.Controls.Add(this.Y_btn);
@@ -505,12 +480,11 @@
             this.Controls.Add(this.left_btn);
             this.Controls.Add(this.up_btn);
             this.Controls.Add(this.pictureBox1);
-            this.Name = "VistaObjetos";
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Name = "ObjetosDetalle";
             this.Text = "Main1";
-            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.VistaObjetos_FormClosed);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            this.panelDescripcion2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxImagen)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -527,7 +501,6 @@
         private RJButton B_btn;
         private RJButton Y_btn;
         private RJButton X_btn;
-        private RJButton power_btn;
         private RJButton n1_btn;
         private RJButton n2_btn;
         private RJButton n3_btn;
@@ -538,10 +511,10 @@
         private RJButton n8_btn;
         private RJButton n7_btn;
         private RJButton n6_btn;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private RJButton registroObj_btn;
+        private System.Windows.Forms.Panel panelDescripcion2;
+        private System.Windows.Forms.PictureBox pictureBoxImagen;
+        private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblDescripcion;
+        private CircularButton circularButton1;
     }
 }

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace Pokedex
@@ -6,12 +7,17 @@ namespace Pokedex
     public partial class PokemonDetalle : Form
     {
         private Pokemon pokemon;
+        private Label lblNombrePokemon;
 
         public PokemonDetalle(Pokemon pokemon)
         {
             InitializeComponent();
+            //Background Invisible No Tocar
+            this.TransparencyKey = Color.Magenta;
+            this.BackColor = Color.Magenta;
+            this.StartPosition = FormStartPosition.CenterScreen;
             this.pokemon = pokemon;
-            MostrarDescripcion(); // Muestra la descripción por defecto al abrir la vista
+            MostrarDescripcion(); 
         }
 
         private void MostrarDescripcion()
@@ -19,6 +25,14 @@ namespace Pokedex
             OcultarTodosLosPaneles();
             panelDescripcion2.Visible = true;
             lblDescripcion.Text = pokemon.Descripcion;
+
+            
+            pictureBoxImagen.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxImagen.Image = (Bitmap)Properties.Resources.ResourceManager.GetObject(pokemon.Nombre);
+            pictureBoxImagen.Size = new Size(298, 254);
+
+            
+            lblNombrePokemon.Text = $"{pokemon.Nombre}";
         }
 
         private void MostrarAtributos()
@@ -72,6 +86,28 @@ namespace Pokedex
         private void n4_btn_Click(object sender, EventArgs e)
         {
             MostrarGeneracion();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panelGeneracion_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void B_btn_Click(object sender, EventArgs e)
+        {
+            VistaPokemon menuPkmn = new VistaPokemon();
+            menuPkmn.Show();
+            this.Close();
+        }
+
+        private void circularButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

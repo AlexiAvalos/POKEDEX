@@ -15,6 +15,10 @@ namespace Pokedex
         public Registro_Objeto()
         {
             InitializeComponent();
+            //Background Invisible No Tocar
+            this.TransparencyKey = Color.Magenta;
+            this.BackColor = Color.Magenta;
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -57,6 +61,18 @@ namespace Pokedex
         public void recargarData()
         {
             dataGridViewObj.DataSource = ObjetoDAL.mostrarRegistroObjetos();
+        }
+
+        private void circularButton1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void B_btn_Click(object sender, EventArgs e)
+        {
+            VistaObjetos main = new VistaObjetos();
+            main.Show();
+            this.Close();
         }
     }
     
