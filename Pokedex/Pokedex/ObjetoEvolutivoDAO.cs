@@ -4,7 +4,7 @@ using System.Data.SqlClient;
 
 public class ObjetoEvolutivoDAO
 {
-    private string connectionString = "Data Source=DESKTOP-J97KSH3;Initial Catalog=PokeWiki;Integrated Security=True";
+    private string connectionString = "Data Source=DESKTOP-UBBP1OB\\NICO;Initial Catalog=PokeWiki;Integrated Security=True";
 
     public ObjetoEvolutivoDAO(string connectionString)
     {

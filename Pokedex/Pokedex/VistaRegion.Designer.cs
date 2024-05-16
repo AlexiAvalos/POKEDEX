@@ -53,6 +53,7 @@
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.circularButton1 = new Pokedex.CircularButton();
+            this.registroReg_btn = new Pokedex.RJButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -389,20 +390,21 @@
             this.pictureBox4.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox4.BackgroundImage = global::Pokedex.Properties.Resources.Pokeballs2;
             this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox4.Location = new System.Drawing.Point(501, 156);
+            this.pictureBox4.Location = new System.Drawing.Point(499, 142);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(100, 50);
             this.pictureBox4.TabIndex = 31;
             this.pictureBox4.TabStop = false;
+            this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.pictureBox2.BackgroundImage = global::Pokedex.Properties.Resources.Regiones;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(431, 183);
+            this.pictureBox2.Location = new System.Drawing.Point(443, 180);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(246, 97);
+            this.pictureBox2.Size = new System.Drawing.Size(219, 68);
             this.pictureBox2.TabIndex = 32;
             this.pictureBox2.TabStop = false;
             // 
@@ -453,11 +455,32 @@
             this.circularButton1.UseVisualStyleBackColor = false;
             this.circularButton1.Click += new System.EventHandler(this.circularButton1_Click);
             // 
+            // registroReg_btn
+            // 
+            this.registroReg_btn.BackColor = System.Drawing.Color.Gold;
+            this.registroReg_btn.BackgroundColor = System.Drawing.Color.Gold;
+            this.registroReg_btn.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.registroReg_btn.BorderRadius = 10;
+            this.registroReg_btn.BorderSize = 0;
+            this.registroReg_btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.LightSeaGreen;
+            this.registroReg_btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.registroReg_btn.Font = new System.Drawing.Font("Showcard Gothic", 9.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registroReg_btn.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.registroReg_btn.Location = new System.Drawing.Point(499, 254);
+            this.registroReg_btn.Name = "registroReg_btn";
+            this.registroReg_btn.Size = new System.Drawing.Size(110, 34);
+            this.registroReg_btn.TabIndex = 72;
+            this.registroReg_btn.Text = "Registro";
+            this.registroReg_btn.TextColor = System.Drawing.SystemColors.ControlText;
+            this.registroReg_btn.UseVisualStyleBackColor = false;
+            this.registroReg_btn.Click += new System.EventHandler(this.registroReg_btn_Click);
+            // 
             // VistaRegion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(755, 494);
+            this.Controls.Add(this.registroReg_btn);
             this.Controls.Add(this.circularButton1);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox2);
@@ -519,5 +542,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private CircularButton circularButton1;
+        private RJButton registroReg_btn;
     }
 }

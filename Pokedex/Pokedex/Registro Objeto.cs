@@ -12,9 +12,18 @@ namespace Pokedex
 {
     public partial class Registro_Objeto : Form
     {
+        private bool dragging = false;
+        private Point dragCursorPoint;
+        private Point dragFormPoint;
+
         public Registro_Objeto()
         {
             InitializeComponent();
+            // Movilidad Del Form No Tocar Delicado
+            pictureBox1.MouseDown += pictureBox1_MouseDown;
+            pictureBox1.MouseMove += pictureBox1_MouseMove;
+            pictureBox1.MouseUp += pictureBox1_MouseUp;
+
             //Background Invisible No Tocar
             this.TransparencyKey = Color.Magenta;
             this.BackColor = Color.Magenta;
@@ -32,23 +41,52 @@ namespace Pokedex
         }
 
         private void guardarObj_btn_Click(object sender, EventArgs e)
-        {
+        {   
+            //se crea un objeto nuevo con los inputs del usuario
             objetoR objeto = new objetoR();
             objeto.Nombre = nombreObj_txt.Text;
             objeto.Descripcion = descObj_txt.Text;
-            
 
-            int result = ObjetoDAL.AgregarObjeto(objeto);
+            if (dataGridViewObj.SelectedCells.Count == 1)
+            {
 
-            if (result > 0)
-            {
-                MessageBox.Show("Objeto guardado exitosamente");
+                int idObj = Convert.ToInt32(dataGridViewObj.CurrentRow.Cells["idObjectoEvolutivo"].Value);
+
+                //validar si es un input nuevo o no
+                if (idObj != null)
+                {
+                    objeto.idObjectoEvolutivo = idObj;
+
+                    int result = ObjetoDAL.ModificarObjeto(objeto);
+
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Objeto modificado exitosamente :D");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ocurrio un error al guardar el registro D:");
+                    }
+                }
+                else
+                {
+
+
+                    int result = ObjetoDAL.AgregarObjeto(objeto);
+
+
+                    if (result > 0)
+                    {
+                        MessageBox.Show("Objeto guardado exitosamente");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Ocurrio un error al guardar el registro D:");
+                    }
+                }
+                recargarData();
             }
-            else
-            {
-                MessageBox.Show("Ocurrio un error al guardar el registro D:");
-            }
-            recargarData();
+          
 
 
         }
@@ -56,6 +94,7 @@ namespace Pokedex
         private void Registro_Objeto_Load(object sender, EventArgs e)
         {
             recargarData();
+            idObj_txt.Enabled = false;
         }
 
         public void recargarData()
@@ -74,6 +113,70 @@ namespace Pokedex
             main.Show();
             this.Close();
         }
+
+        //cambiar los values de los inputs dependiendo de la seleccion que se haga en el datagrid
+        private void dataGridViewObj_SelectionChanged(object sender, EventArgs e)
+        {
+            idObj_txt.Text = Convert.ToString(dataGridViewObj.CurrentRow.Cells[0].Value);
+            nombreObj_txt.Text = Convert.ToString(dataGridViewObj.CurrentRow.Cells[1].Value);
+            descObj_txt.Text = Convert.ToString(dataGridViewObj.CurrentRow.Cells[2].Value);
+        }
+
+        private void textBox1_TextChanged_1(object sender, EventArgs e)
+        {
+
+        }
+
+        //para limpiar los inputs que hay en el registro de objetos 
+        private void limpiarObj_btn_Click(object sender, EventArgs e)
+        {
+            idObj_txt.Clear();
+            nombreObj_txt.Clear();
+            descObj_txt.Clear();
+            dataGridViewObj.CurrentCell= null;
+        }
+
+        private void eliminarObj_btn_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewObj.SelectedCells.Count == 1)
+            {
+                int id = Convert.ToInt32(dataGridViewObj.CurrentRow.Cells["idObjectoEvolutivo"].Value);
+                int resultado = ObjetoDAL.EliminarObjeto(id);
+
+                if (resultado > 0)
+                {
+                    MessageBox.Show("Objeto eliminado correctamente :D");
+                    recargarData();
+                }
+                else
+                {
+                    MessageBox.Show("Ocurrió un error al eliminar el objeto D:");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Seleccione un objeto para eliminar.");
+            }
+        }
+        private void pictureBox1_MouseDown(object sender, MouseEventArgs e)
+        {
+            dragging = true;
+            dragCursorPoint = Cursor.Position;
+            dragFormPoint = this.Location;
+        }
+        private void pictureBox1_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (dragging)
+            {
+                Point dif = Point.Subtract(Cursor.Position, new Size(dragCursorPoint));
+                this.Location = Point.Add(dragFormPoint, new Size(dif));
+            }
+        }
+        private void pictureBox1_MouseUp(object sender, MouseEventArgs e)
+        {
+            dragging = false;
+        }
+
     }
-    
+
 }

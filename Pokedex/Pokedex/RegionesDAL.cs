@@ -7,15 +7,15 @@ using System.Threading.Tasks;
 
 namespace Pokedex
 {
-    public class ObjetoDAL
+    public class RegionesDAL
     {
-        public static int AgregarObjeto(objetoR objeto)
+        public static int AgregarRegion(RegionesCons region)
         {
             int retorna = 0;
 
             using (SqlConnection conn = RegistroObj.RealizarConexion())
             {
-                string query = "insert into Objectos_Evolutivos ( Nombre, Descripcion) values('"+objeto.Nombre+"', '"+objeto.Descripcion+"')";
+                string query = "insert into Regiones ( Nombre, Descripcion) values('" + region.Nombre + "', '" + region.Descripcion + "')";
                 SqlCommand comando = new SqlCommand(query, conn);
                 retorna = comando.ExecuteNonQuery();
             }
@@ -23,51 +23,52 @@ namespace Pokedex
             return retorna;
         }
 
-        public static List<objetoR> mostrarRegistroObjetos()
+
+        public static List<RegionesCons> mostrarRegistroRegiones()
         {
-            List <objetoR> Lista = new List<objetoR>();
+            List<RegionesCons> Lista = new List<RegionesCons>();
             using (SqlConnection conn = RegistroObj.RealizarConexion())
             {
-                string query = "Select * from Objectos_Evolutivos";
-                SqlCommand comando = new SqlCommand (query, conn);
-                
+                string query = "Select * from Regiones";
+                SqlCommand comando = new SqlCommand(query, conn);
+
                 SqlDataReader reader = comando.ExecuteReader();
 
                 while (reader.Read())
                 {
-                    objetoR objeto = new objetoR();
-                    objeto.idObjectoEvolutivo = reader.GetInt32(0);
-                    objeto.Nombre = reader.GetString(1);
-                    objeto.Descripcion = reader.GetString(2);
-                    Lista.Add(objeto);
-                   
+                    RegionesCons region = new RegionesCons();
+                    region.idRegion = reader.GetInt32(0);
+                    region.Nombre = reader.GetString(1);
+                    region.Descripcion = reader.GetString(2);
+                    Lista.Add(region);
+
                 }
                 conn.Close();
                 return Lista;
             }
         }
 
-        public static int ModificarObjeto(objetoR objeto)
+        public static int ModificarRegion(RegionesCons region)
         {
             int result = 0;
             using (SqlConnection conn = RegistroObj.RealizarConexion())
             {
-                string query = "update Objectos_Evolutivos set Nombre= '" + objeto.Nombre + "', Descripcion='" + objeto.Descripcion + "' where idObjectoEvolutivo= " + objeto.idObjectoEvolutivo + " ";
-                SqlCommand comando = new SqlCommand (query, conn);
+                string query = "update Regiones set Nombre= '" + region.Nombre + "', Descripcion='" + region.Descripcion + "' where idRegion= " + region.idRegion + " ";
+                SqlCommand comando = new SqlCommand(query, conn);
 
                 result = comando.ExecuteNonQuery();
                 conn.Close();
-            } 
+            }
             return result;
         }
 
-        public static int EliminarObjeto(int idObjectoEvolutivo)
+        public static int EliminarRegion(int idRegion)
         {
             int retorna = 0;
 
             using (SqlConnection conn = RegistroObj.RealizarConexion())
             {
-                string query = "delete from Objectos_Evolutivos where idObjectoEvolutivo = "+idObjectoEvolutivo+" ";
+                string query = "delete from Regiones where idRegion = " + idRegion + " ";
                 SqlCommand comando = new SqlCommand(query, conn);
                 retorna = comando.ExecuteNonQuery();
             }
