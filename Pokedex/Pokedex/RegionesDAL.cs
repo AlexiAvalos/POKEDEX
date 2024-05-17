@@ -23,7 +23,7 @@ namespace Pokedex
             return retorna;
         }
 
-
+        //lista para el datagrid
         public static List<RegionesCons> mostrarRegistroRegiones()
         {
             List<RegionesCons> Lista = new List<RegionesCons>();
@@ -47,6 +47,7 @@ namespace Pokedex
                 return Lista;
             }
         }
+        //modificar la region
 
         public static int ModificarRegion(RegionesCons region)
         {
