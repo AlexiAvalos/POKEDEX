@@ -41,22 +41,26 @@ namespace Pokedex
         }
 
         private void guardarObj_btn_Click(object sender, EventArgs e)
-        {   
-            //se crea un objeto nuevo con los inputs del usuario
-            objetoR objeto = new objetoR();
-            objeto.Nombre = nombreObj_txt.Text;
-            objeto.Descripcion = descObj_txt.Text;
-
-            if (dataGridViewObj.SelectedCells.Count == 1)
+        {
+            // Se crea un nuevo objeto con los inputs del usuario
+            objetoR objeto = new objetoR
             {
+                Nombre = nombreObj_txt.Text,
+                Descripcion = descObj_txt.Text
+            };
 
-                int idObj = Convert.ToInt32(dataGridViewObj.CurrentRow.Cells["idObjectoEvolutivo"].Value);
+            // Verificar si hay una celda seleccionada
+            if (dataGridViewObj.SelectedCells.Count > 0)
+            {
+                // Intentar obtener el idObjectoEvolutivo desde la celda seleccionada
+                int idObj = dataGridViewObj.CurrentRow.Cells["idObjectoEvolutivo"].Value != null
+                    ? Convert.ToInt32(dataGridViewObj.CurrentRow.Cells["idObjectoEvolutivo"].Value)
+                    : 0;
 
-                //validar si es un input nuevo o no
-                if (idObj != null)
+               
+                if (idObj > 0)
                 {
                     objeto.idObjectoEvolutivo = idObj;
-
                     int result = ObjetoDAL.ModificarObjeto(objeto);
 
                     if (result > 0)
@@ -65,28 +69,44 @@ namespace Pokedex
                     }
                     else
                     {
-                        MessageBox.Show("Ocurrio un error al guardar el registro D:");
+                        MessageBox.Show("Ocurrió un error al modificar el registro D:");
                     }
                 }
                 else
                 {
-
-
                     int result = ObjetoDAL.AgregarObjeto(objeto);
-
 
                     if (result > 0)
                     {
-                        MessageBox.Show("Objeto guardado exitosamente");
+                        MessageBox.Show("Objeto guardado exitosamente :D");
                     }
                     else
                     {
-                        MessageBox.Show("Ocurrio un error al guardar el registro D:");
+                        MessageBox.Show("Ocurrió un error al guardar el registro D:");
                     }
                 }
+
+                // Recargar los datos en el DataGridView
                 recargarData();
             }
-          
+            else
+            {
+                // No hay celdas seleccionadas, por lo tanto, es una nueva inserción
+                int result = ObjetoDAL.AgregarObjeto(objeto);
+
+                if (result > 0)
+                {
+                    MessageBox.Show("Objeto guardado exitosamente :D");
+                }
+                else
+                {
+                    MessageBox.Show("Ocurrió un error al guardar el registro D:");
+                }
+
+                // Recargar los datos en el DataGridView
+                recargarData();
+            }
+
 
 
         }

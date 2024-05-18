@@ -15,6 +15,39 @@ namespace Pokedex
 
         public RegionesCons() { }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         public RegionesCons(int idRegion, string Nombre, string Descripcion)
         {
             this.idRegion = idRegion;

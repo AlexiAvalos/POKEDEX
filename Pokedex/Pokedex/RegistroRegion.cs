@@ -50,6 +50,7 @@ namespace Pokedex
 
         public void recargarData()
         {
+            //pasarle datos al datagrid
             dataGridViewReg.DataSource = RegionesDAL.mostrarRegistroRegiones();
         }
 
